@@ -1,7 +1,7 @@
 html{
     box-sizing: border-box; 
     font-size: 62.5%; /*Reset para Rems 62.5% = 10px de 16px*/
-    
+
 }
 *, *:before, *:after{
     box-sizing:inherit;
@@ -9,20 +9,16 @@ html{
 body{
     font-family: 'Lato',sans-serif;
     font-size: 1.6rem;
-    line-height: 2;
+    line-height: 3;
 }
 img{
     max-width: 100%;
 }
 
 
+
 /**header**/
-.header-del-sitio{
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    min-height: 60rem;
-}
+
 .contenedor{
     color: white;
     height: 100%;
@@ -32,14 +28,52 @@ img{
 }
 
 .header-fondo{
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /**padding-top: 3rem;**/
-    background-color: red;
-    
+    background-color: #fa4252;
+
 }
-.navegacion p{
+.navegacion a{
+    color: #ffffffff;
+    text-decoration: none;
     font-size: 1.8rem;
     margin-right: 2rem;
+}
+.navegacion a:hover{
+    color: fuchsia;
+}
+.imagenes-header{
+    align-content: flex-start;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+
+/**Imagen central**/
+.imagen-fondo{
+    background-image: url(../imagenes/study-hard-for-exam.png);
+    background-position: center center;
+    background-size: cover;
+    height: 87.43vh;
+    min-height: 60vh;
+    margin: 0;
+
+}
+.texto{
+    background-color: #000;
+    opacity: .7;
+    color: #fff;
+    padding: 7.5rem 2rem;
+    max-width: 100rem;
+    line-height: 1.8;
+    font-size: 2.8rem;
+    
+}
+.texto.title{
+    font-size: 3rem;
+    font-style: oblique;
 }
