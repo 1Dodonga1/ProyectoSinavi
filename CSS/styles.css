@@ -1,0 +1,45 @@
+html{
+    box-sizing: border-box; 
+    font-size: 62.5%; /*Reset para Rems 62.5% = 10px de 16px*/
+    
+}
+*, *:before, *:after{
+    box-sizing:inherit;
+}
+body{
+    font-family: 'Lato',sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+img{
+    max-width: 100%;
+}
+
+
+/**header**/
+.header-del-sitio{
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+.contenedor{
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-fondo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /**padding-top: 3rem;**/
+    background-color: red;
+    
+}
+.navegacion p{
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
