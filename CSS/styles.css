@@ -60,20 +60,23 @@ img{
     background-size: cover;
     height: 87.43vh;
     min-height: 60vh;
-    margin: 0;
+    margin-top: 0;
 
 }
 .texto{
     background-color: #000;
     opacity: .7;
     color: #fff;
-    padding: 7.5rem 2rem;
-    max-width: 100rem;
+    padding: 1.5rem 2.5rem 16.3rem 2.5rem;
+    max-width: 80rem;
     line-height: 1.8;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     
 }
-.texto.title{
-    font-size: 3rem;
-    font-style: oblique;
+.title{
+    font-size: 6rem;
+    line-height: 1;
+    font-style:normal;
+    margin-bottom: 6rem;
+    font-family: 'Bellota Text', cursive;
 }
