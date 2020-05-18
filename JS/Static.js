@@ -4,8 +4,7 @@ $(document).ready(function () {
 
 function BarraInicio(){
   let barra=
-     `    
-        <img id="ima" src="../imagenes/logoMini.png" alt="LogoSinav" class="logo">
+     `     <img id="ima" src="../imagenes/logoMini.png" alt="LogoSinav" class="logo">
           <ul class="menu">
 
             <li><a href="#">Categorias</a></li>
@@ -21,8 +20,9 @@ function BarraInicio(){
             <li><a href="#">Alumnos</a></li>
             <li><a href="#">Calificaciones</a></li>
             <li><a href="#">cerrar</a></li>
-          </ul> 
-      `;
+          </ul>   `;
     $('#barra').html(barra);
 }
+   
+
 });
