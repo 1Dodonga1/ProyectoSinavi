@@ -1,12 +1,9 @@
 <?php
-
-$connection = mysqli_connect(
-  'localhost', 'root', 'morado', 'sinav'
-);
+$connection =   mysqli_connect( "localhost", "root", "morado", "sinav");
 
 // for testing connection
-if($connection) {
-  echo 'database is connected';
-}
-
+/*if($connection) {
+  print_r( "database is connected");
+}else{
+print_r("noo");}*/
 ?>

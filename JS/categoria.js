@@ -1,18 +1,21 @@
 $(document).ready(function () {
   
+  inicio();
+
   function inicio(){
   $.ajax({
-    url: '../PHP/Categorias.php,
+    url: '../PHP/Categorias.php',
     type: 'GET',
-     succes: function (response) {
-       const categ = JSON.parse(response);
-      let cargando= '';
-      categ.array.forEach(categoria => {
-        template += `
-         <button></button><br>
-         <label> curso</label>  
-        `;
-      });
+     success: function (response) {
+       let categ = JSON.parse(response);
+       let cargando = '';
+       categ.forEach(categoria => {
+         console.log("dasdf");
+         cargando += `
+         <button>sdaf</button><br>`;
+
+       });
+       $('#Categoria').html(cargando);
     }
   });
   }

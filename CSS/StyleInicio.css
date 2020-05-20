@@ -58,17 +58,3 @@
 #ima{
    float: left;
 }
-
-#Categoria button{
-  width: 150px;
-  height: 150px;
-  background: rgb(70, 99, 180);
-  font-size: 80px;
-  position: absolute;
-  left:100px;
-  top: 130px;
-}
-
-#categoria button:hover{
- background-color: gray; 
-}
