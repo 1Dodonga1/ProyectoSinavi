@@ -1,0 +1,60 @@
+*{ margin: 0; padding: 0; }
+
+.navegacion{
+  
+  width: 100%;
+  margin: 30px auto;
+  background:rgb(53, 80, 155);
+  font-size: 15px;
+}
+.navegacion ul{
+  list-style: none;
+  text-align: right;
+}
+.menu >  li{
+  display: inline-block;
+  
+}
+
+.menu  li  a{
+  display: block;
+  padding: 15px 20px;
+  color: beige;
+  font-family: 'Lucida Sans';
+  text-decoration: none;
+  
+}
+
+.menu li a:hover{
+  background: gray;
+  border-radius: 10%;
+ 
+}
+
+ .children{
+  position: absolute;
+  background: rgb(167, 92, 92);
+  width: 120%;
+  visibility: hidden;
+  opacity: 0; 
+  transition: opacity 1.5s;
+
+  
+}
+
+.children li a{
+  display: block;
+  padding: 15px;
+  color: black;
+  font-family: 'Lucida Sans';
+  text-decoration: none;
+}
+
+.menu li:hover .children{
+    visibility: visible;
+    opacity: 1;
+}
+
+#ima{
+   float: left;
+}
