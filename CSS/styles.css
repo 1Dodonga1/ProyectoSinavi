@@ -43,7 +43,7 @@ img{
     margin-right: 2rem;
 }
 .navegacion a:hover{
-    color: fuchsia;
+    color:darkslategrey;
 }
 .imagenes-header{
     align-content: flex-start;
@@ -67,24 +67,25 @@ img{
     background-color: #000;
     opacity: .7;
     color: #fff;
-    padding: 1.5rem 2.5rem 9.7rem 2.5rem;
+    padding: 1.5rem 2.5rem 4.7rem 2.5rem;
     max-width: 80rem;
     line-height: 1.8;
     font-size: 2.4rem;
-    
+
 }
 .title{
-    font-size: 6rem;
+    font-size: 5rem;
     line-height: 1;
     font-style:normal;
     margin-bottom: 6rem;
-    font-family: 'Bellota Text', cursive;
+    font-family:'Lato',sans-serif;
+    
 }
 
 /*CSS del registro*/
 
 .modelo-global{
-    
+
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.7);
@@ -108,7 +109,7 @@ input{
     width: 50%;
     display: block;
     margin: 1.5rem auto;
-    
+
 }
 .cerrar{
     position: absolute;
@@ -120,14 +121,14 @@ input{
 }
 
 input{
-    
+
     padding: .6rem;
     width: 70%;
     background-color: #e1e1e1;
     border: none;
     border-radius: 1rem;
     color:dimgrey;
-    
+
 }
 .button{
     color: black;
@@ -139,4 +140,64 @@ input{
     background-color: #fa4252;
     color: white;
     padding: 1rem;
+}
+
+
+/*Estilos de FAQ*/
+
+.contenedor2{
+    max-width: 100rem;
+    margin: 0 auto 0 auto;
+
+}
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.texto-acomodo{
+    flex-basis: calc(33.3% - 1.5rem);
+    font-size: 1.2rem;
+}
+.seccionar{
+    display: flex;
+    justify-content: space-between;
+}
+.titulo{
+    text-transform: uppercase;
+    font-weight: 300; 
+}
+
+/*Acomoda los espacios*/
+.respuesta{
+    padding: .5rem 3rem .5rem 1rem;
+}
+#tituloFAQ{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/*Estilos de footer*/
+.footer-sitio{
+    background-color: #333333;
+    margin: 0;
+}
+.contenedor-footer{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.Navegacion a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+.Navegacion a:hover{
+    color:#fa4252;
+}
+.copyright{
+    margin: 0;
+    color: #FFFFFF;
 }
