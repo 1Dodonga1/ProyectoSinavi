@@ -80,3 +80,63 @@ img{
     margin-bottom: 6rem;
     font-family: 'Bellota Text', cursive;
 }
+
+/*CSS del registro*/
+
+.modelo-global{
+    
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.contenido-modelo{
+    width: 50rem;
+    height: 52rem;
+    background-color:white;
+    border-radius: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+input{
+    width: 50%;
+    display: block;
+    margin: 1.5rem auto;
+    
+}
+.cerrar{
+    position: absolute;
+    top: -4rem;
+    right: 1.4rem;
+    font-size: 4.2rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+input{
+    
+    padding: .6rem;
+    width: 70%;
+    background-color: #e1e1e1;
+    border: none;
+    border-radius: 1rem;
+    color:dimgrey;
+    
+}
+.button{
+    color: black;
+    text-decoration: none;
+}
+
+
+.btnRegistrarse{
+    background-color: #fa4252;
+    color: white;
+    padding: 1rem;
+}
