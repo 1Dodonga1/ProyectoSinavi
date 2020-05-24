@@ -1,28 +1,32 @@
 $(document).ready(function () {
 
   BarraInicio();
-
+  BarraPerfil();
+  
+//crea la barra del header al mandar a llamar el js
 function BarraInicio(){
   let barra=
-     `     <img id="ima" src="../imagenes/logoMini.png" alt="LogoSinav" class="logo">
+     `     <img id="ima" src="../imagenes/Untitled-1.png" class="logo">
           <ul class="menu">
 
-            <li><a href="#">Categorias</a></li>
-            <ul class="children">
-              <li><a href="#">Preguntas</a></li>
-              <li><a href="#">Nueva pregunta</a></li>
-              <li><a href="#">Nueva Categoria</a></li>
-            </ul>
-            <li><a href="#">Examenes</a></li>
-            <ul class="children">
-              <li><a href="#"> Examen</a></li>
-            </ul>
-            <li><a href="#">Alumnos</a></li>
-            <li><a href="#">Calificaciones</a></li>
-            <li><a href="#">cerrar</a></li>
+            <li><a href="../HTML/categoria.html">Categorias</a></li>
+            <li><a href="../HTML/examen.html">Examenes</a></li>
+            <li><a href="../HTML/alumnos.html">Alumnos</a></li>
+            <li><a href="../HTML/calificaciones.html">Calificaciones</a></li>
           </ul>   `;
     $('#barra').html(barra);
 }
-   
+
+//crea la barra perfil al mandar a llamar el js
+function BarraPerfil(){
+  let barra =
+    `    <ul>
+      <li><img src="../imagenes/usuario.png" ></ima> </li>
+      <li id="nombre">Nombre Apellido</li>
+      <li id="usuario">usuario</li>
+      <li><button id="cerrar">Cerrar</button></li>
+    </ul> `;
+  $('#perfil').html(barra);
+}
 
 });

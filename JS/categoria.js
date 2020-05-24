@@ -12,7 +12,7 @@ $(document).ready(function () {
        categ.forEach(categoria => {
          console.log("dasdf");
          cargando += `
-         <button>sdaf</button><br>`;
+         <button >${categoria.nombre}</button><br> `;
 
        });
        $('#Categoria').html(cargando);
