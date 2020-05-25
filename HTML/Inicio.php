@@ -1,6 +1,6 @@
 <?php
   session_start();
-  $NomMateria = $_SESSION['nombreMateria']
+  $NomMateria = $_SESSION['nombreMateria'];
   if($NomMateria== null || $NomMateria=''){
     echo 'seleciona una materia';
   }
@@ -17,7 +17,7 @@
   <!--Barra que se carga desde la clase Staic.js-->
   <nav class="navegacion" id="barra"></nav>
 
-  <h1 id="h1"><?php  echo <section></section>?></h1>
+  <h1 id="h1"><?php  echo $_SESSION['nombreMateria']?></h1>
   <!--barra perfil que se carga desde la clase Staic.js-->
   <nav id="perfil"></nav>
 
