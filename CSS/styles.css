@@ -11,8 +11,20 @@ body{
     font-size: 1.6rem;
     line-height: 3;
 }
+div{
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
 img{
     max-width: 100%;
+}
+
+li, ol, ul {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -69,7 +81,7 @@ img{
     color: #fff;
     padding: 1.5rem 2.5rem 4.7rem 2.5rem;
     max-width: 80rem;
-    line-height: 1.8;
+    line-height: 1.5;
     font-size: 2.4rem;
 
 }
@@ -229,4 +241,104 @@ input,select{
 .copyright{
     margin: 0;
     color: #FFFFFF;
+}
+
+/*Estilos BODY*/
+
+.texto1{
+    background-color: #000;
+    opacity: .7;
+    color: #fff;
+    padding: 1.5rem 2.5rem 9.7rem 2.5rem;
+    max-width: flex;
+    line-height: 1.1;
+    font-size: 2.4rem;
+}
+
+.title{
+    font-size: 6rem;
+    line-height: 1;
+    font-style:normal;
+    margin-bottom: 6rem;
+    font-family: 'Bellota Text', cursive;
+}
+
+.container {
+    width: 100%;
+    padding-right: 6px;
+    padding-left: 6px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.parent-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.user-message-container {
+    margin: 0 45px;
+}
+
+.footer-container {
+    padding-bottom: 45px;
+}
+
+.align-items-center {
+    align-items: center!important;
+}
+.d-flex {
+    display: flex!important;
+}
+
+.landing-page-picture {
+    max-width: 50%;
+    min-width: 50%;
+}
+
+.show-me-more-link {
+    font-family: Disclaimer Medium,Helvetica Neue,Helvetica,sans-serif;
+    color: #ff6f00;
+    font-size: 21px;
+    line-height: 31px;
+    margin-top: 16px;
+    display: inline-block;
+}
+
+.f-main-col {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.f-col {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+
+.global-network {
+    color: #4f5468;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 16px;
+}
+
+.footer-section-title {
+    font-family: Disclaimer Medium,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 1rem;
+    color: #4f5468;
+    margin-bottom: 12px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -6px;
+    margin-left: -6px;
+}
+
+.list-link-item {
+    font-family: Disclaimer Regular,Helvetica Neue,Helvetica,sans-serif;
+    margin-bottom: 20px;
+    text-transform: capitalize;
 }
