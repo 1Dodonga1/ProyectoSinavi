@@ -28,7 +28,8 @@ $(document).ready(function () {
       data: {id},
       type: 'POST',
       success: function (response) {
-        console.log(response);
+        location.href = "../HTML/inicio.php";
+       console.log(response);
       }
     });
   });

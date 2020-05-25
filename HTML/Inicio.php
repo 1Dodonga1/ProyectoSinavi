@@ -46,6 +46,6 @@
 
     <!--<script src="../JS/categoria.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="../JS/Static.js?6533"></script>
+    <script src="../JS/Static.js?6533d"></script>
 </body>
 </html>

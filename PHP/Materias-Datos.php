@@ -13,7 +13,7 @@ if(!$result) {
 $row = mysqli_fetch_array($result);
      session_start();
       $_SESSION['idMateria']=$id;
-      $_SESSION['nombreMateria']=($row['Materia'];
+      $_SESSION['nombreMateria']=$row['Materia'];
       $_SESSION['codigo']=$row['codigo'];
      // $obj-> setidMateria($row['IdMaterias']);
      // $obj-> setNombreMateria($row['Materia']);
@@ -21,5 +21,6 @@ $row = mysqli_fetch_array($result);
 
 //echo $obj-> getNombreMateria();
  
- header('Location: ../HTML/inicio.php');
+ // echo header('Location: ../HTML/inicio.html');
+   echo   $_SESSION['nombreMateria']
 ?>
