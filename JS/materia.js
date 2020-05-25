@@ -24,12 +24,12 @@ $(document).ready(function () {
     let id = this.id;
     console.log(id);
     $.ajax({
-      url: '../PHP/Materias-Datos.php?fr',
+      url: '../PHP/Materias-Datos.php',
       data: {id},
       type: 'POST',
       success: function (response) {
+        console.log(response);
         location.href = "../HTML/inicio.php";
-       console.log(response);
       }
     });
   });

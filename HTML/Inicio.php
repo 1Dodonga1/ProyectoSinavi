@@ -5,7 +5,6 @@
     echo 'seleciona una materia';
   }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,14 +25,14 @@
    <div class="contenedorInicio">
       <nav class="CategoriaPreguntas"> 
         <a href="../HTML/categoria.html">Categorias</a>
-        <img class="ima" src="../imagenes/categoria.jpg"></ima>
+        <img class="ima" src="../imagenes/categoria.jpg">
         <button id="Newcategoria">Nueva Categoria</button>
         <button id="categoria" onclick="window.location.href='../HTML/categoria.html'">Ver Categorias</button>
       </nav>
 
       <nav class="Examenes">
         <a href="../HTML/examen.html">Examenes</a>
-        <img class="ima" src="../imagenes/examen.jpg"></ima>
+        <img class="ima" src="../imagenes/examen.jpg">
         <button id="NewExamen">Nuevo Categoria</button>
         <button id="Examen" onclick="window.location.href='../HTML/examen.html'">Ver Examenes</button>
       </nav>
@@ -41,12 +40,12 @@
   <div class="contenedorInicio">
       <nav class="Alumnos">
         <a href="../HTML/alumnos.html">Alumnos</a>
-        <img class="ima" src="../imagenes/alumnos.jpg"></ima>
+        <img class="ima" src="../imagenes/alumnos.jpg">
         <button id="Lista" onclick="window.location.href='../HTML/alumnos.html'">Lista de alumnos</button>
       </nav>
       <nav class="Calificaciones">
         <a href="../HTML/calificaciones.html">Calificaciones</a>
-        <img  class="ima" src="../imagenes/califica.jpg"></ima>
+        <img  class="ima" src="../imagenes/califica.jpg">
         <button id="Calificaciones" onclick="window.location.href='../HTML/calificaciones.html'">revisar Calificaciones</button>
       </nav>
   </div>
