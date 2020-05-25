@@ -11,8 +11,20 @@ body{
     font-size: 1.6rem;
     line-height: 3;
 }
+div{
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
 img{
     max-width: 100%;
+}
+
+li, ol, ul {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -43,7 +55,7 @@ img{
     margin-right: 2rem;
 }
 .navegacion a:hover{
-    color: fuchsia;
+    color:darkslategrey;
 }
 .imagenes-header{
     align-content: flex-start;
@@ -67,16 +79,266 @@ img{
     background-color: #000;
     opacity: .7;
     color: #fff;
-    padding: 1.5rem 2.5rem 9.7rem 2.5rem;
+    padding: 1.5rem 2.5rem 4.7rem 2.5rem;
     max-width: 80rem;
-    line-height: 1.8;
+    line-height: 1.5;
     font-size: 2.4rem;
+
+}
+.title{
+    font-size: 5rem;
+    line-height: 1;
+    font-style:normal;
+    margin-bottom: 6rem;
+    font-family:'Lato',sans-serif;
     
 }
+
+/*CSS del registro*/
+
+.modelo-global{
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modelo-global2{
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.contenido-modelo2{
+    width: 50rem;
+    height: 40rem;
+    background-color:white;
+    border-radius: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+.contenido-modelo{
+    width: 50rem;
+    height: 60rem;
+    background-color:white;
+    border-radius: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+}
+input{
+    width: 50%;
+    display: block;
+    margin: 1.5rem auto;
+
+}
+.cerrar{
+    position: absolute;
+    top: -4rem;
+    right: 1.4rem;
+    font-size: 4.2rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+.cerrar2{
+    position: absolute;
+    top: -4rem;
+    right: 1.4rem;
+    font-size: 4.2rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+input,select{
+
+    padding: .6rem;
+    width: 70%;
+    background-color: #e1e1e1;
+    border: none;
+    border-radius: 1rem;
+    color:dimgrey;
+
+}
+.button{
+    color: black;
+    text-decoration: none;
+}
+
+
+.btnRegistrarse{
+    background-color: #fa4252;
+    color: white;
+    padding: 1rem;
+}
+
+
+
+/*Estilos de FAQ*/
+
+.contenedor2{
+    max-width: 100rem;
+    margin: 0 auto 0 auto;
+
+}
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.texto-acomodo{
+    flex-basis: calc(33.3% - 1.5rem);
+    font-size: 1.2rem;
+}
+.seccionar{
+    display: flex;
+    justify-content: space-between;
+}
+.titulo{
+    text-transform: uppercase;
+    font-weight: 300; 
+}
+
+/*Acomoda los espacios*/
+.respuesta{
+    padding: .5rem 3rem .5rem 1rem;
+}
+#tituloFAQ{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/*Estilos de footer*/
+.footer-sitio{
+    background-color: #333333;
+    margin: 0;
+}
+.contenedor-footer{
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.Navegacion a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-right: 2rem;
+}
+.Navegacion a:hover{
+    color:#fa4252;
+}
+.copyright{
+    margin: 0;
+    color: #FFFFFF;
+}
+
+/*Estilos BODY*/
+
+.texto1{
+    background-color: #000;
+    opacity: .7;
+    color: #fff;
+    padding: 1.5rem 2.5rem 9.7rem 2.5rem;
+    max-width: flex;
+    line-height: 1.1;
+    font-size: 2.4rem;
+}
+
 .title{
     font-size: 6rem;
     line-height: 1;
     font-style:normal;
     margin-bottom: 6rem;
     font-family: 'Bellota Text', cursive;
+}
+
+.container {
+    width: 100%;
+    padding-right: 6px;
+    padding-left: 6px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.parent-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.user-message-container {
+    margin: 0 45px;
+}
+
+.footer-container {
+    padding-bottom: 45px;
+}
+
+.align-items-center {
+    align-items: center!important;
+}
+.d-flex {
+    display: flex!important;
+}
+
+.landing-page-picture {
+    max-width: 50%;
+    min-width: 50%;
+}
+
+.show-me-more-link {
+    font-family: Disclaimer Medium,Helvetica Neue,Helvetica,sans-serif;
+    color: #ff6f00;
+    font-size: 21px;
+    line-height: 31px;
+    margin-top: 16px;
+    display: inline-block;
+}
+
+.f-main-col {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.f-col {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+
+.global-network {
+    color: #4f5468;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 16px;
+}
+
+.footer-section-title {
+    font-family: Disclaimer Medium,Helvetica Neue,Helvetica,sans-serif;
+    font-size: 1rem;
+    color: #4f5468;
+    margin-bottom: 12px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -6px;
+    margin-left: -6px;
+}
+
+.list-link-item {
+    font-family: Disclaimer Regular,Helvetica Neue,Helvetica,sans-serif;
+    margin-bottom: 20px;
+    text-transform: capitalize;
 }
