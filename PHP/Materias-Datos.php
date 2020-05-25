@@ -11,9 +11,15 @@ if(!$result) {
     die('Query Failed'. mysqli_error($connection));
   }
 $row = mysqli_fetch_array($result);
-      $obj-> setidMateria($row['IdMaterias']);
-      $obj-> setNombreMateria($row['Materia']);
-      $obj-> setCodigo($row['codigo']);
+     session_start();
+      $_SESSION['idMateria']=$id;
+      $_SESSION['nombreMateria']=($row['Materia'];
+      $_SESSION['codigo']=$row['codigo'];
+     // $obj-> setidMateria($row['IdMaterias']);
+     // $obj-> setNombreMateria($row['Materia']);
+     // $obj-> setCodigo($row['codigo']);
 
-echo $obj-> getNombreMateria();
+//echo $obj-> getNombreMateria();
+ 
+ header('Location: ../HTML/inicio.php');
 ?>
