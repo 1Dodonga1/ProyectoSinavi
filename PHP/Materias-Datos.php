@@ -4,7 +4,7 @@ require_once('../PHP/DatosMateria.php');
  $obj=new DatosMateria();
 
 $id=$_POST['id'];
-$query ="select *from materias where 	IdMaterias=$id;";
+$query ="select *from materias where IdMaterias=$id;";
 
 $result = mysqli_query($connection,$query);
 if(!$result) {
