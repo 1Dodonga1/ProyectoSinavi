@@ -98,7 +98,7 @@ img{
 }
 .contenido-modelo{
     width: 50rem;
-    height: 52rem;
+    height: 60rem;
     background-color:white;
     border-radius: 1.5rem;
     text-align: center;
@@ -120,7 +120,7 @@ input{
     cursor: pointer;
 }
 
-input{
+input,select{
 
     padding: .6rem;
     width: 70%;
