@@ -171,7 +171,7 @@ input, select, textarea{
 
 .cerrar{
     position: absolute;
-    top: -4rem;
+    top: 2rem;
     right: 1.4rem;
     font-size: 4.2rem;
     transform: rotate(45deg);
@@ -179,7 +179,7 @@ input, select, textarea{
 }
 .cerrar2{
     position: absolute;
-    top: -4rem;
+    top: 2rem;
     right: 1.4rem;
     font-size: 4.2rem;
     transform: rotate(45deg);
@@ -273,6 +273,15 @@ input select, submit, textarea{
     color: #FFFFFF;
 }
 
+<<<<<<< HEAD
+/**Objetos de conflicto pasado:**/
+li, ol, ul {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+}
+=======
 /*Estilos BODY*/
 
 .texto1{
@@ -372,3 +381,4 @@ input select, submit, textarea{
     margin-bottom: 20px;
     text-transform: capitalize;
 }
+>>>>>>> 400f6d509d188581f48e74f3369a4e2daf6d27f4
