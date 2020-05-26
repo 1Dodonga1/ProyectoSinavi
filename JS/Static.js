@@ -12,7 +12,7 @@ function BarraInicio(){
             <li><a href="../HTML/categoria.html">Categorias</a></li>
             <li><a href="../HTML/examen.html">Examenes</a></li>
             <li><a href="../HTML/alumnos.html">Alumnos</a></li>
-            <li><a href="../HTML/calificaciones.html">Calificaciones</a></li>
+            <li><a href="../HTML/calificaciones.html?afak">Calificaciones</a></li>
           </ul>   `;
     $('#barra').html(barra);
 }
@@ -22,9 +22,10 @@ function BarraPerfil(){
   let barra =
     `    <ul>
       <li><img src="../imagenes/usuario.png" ></ima> </li>
-      <li id="nombre">Nombre Apellido</li>
-      <li id="usuario">usuario</li>
-      <li><button id="cerrar">Cerrar</button></li>
+      <li id="nombre"> Usuario de Sinav</li>
+      <li id="usuario">Teacher</li>
+      <br>
+      <li><button onclick="location.href='../PHP/cerrarSession.php'" >Cerrar</button></li>
     </ul> `;
   $('#perfil').html(barra);
 }

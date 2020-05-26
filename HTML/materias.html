@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../CSS/StyleInicio.css?63864">
+  <link rel="stylesheet" href="../CSS/StyleInicio.css?63">
   <title>Document</title>
 </head>
 <body>
@@ -11,7 +11,7 @@
   <nav class="navegacion" id="barra">
       <img id="ima" src="../imagenes/Untitled-1.png" class="logo">
       <ul class="menu">
-        <li><a href="#">Cerrar</a></li>
+        <li><a href="../PHP/cerrarSession.php">Cerrar</a></li>
       </ul>
   </nav>
   <img class="img" src="../imagenes/FondoMa.png">
@@ -19,9 +19,18 @@
 <!--Materias cargadas Dinamicamente con la base de datos-->
   <div id="CargaMaterias"> </div>
  
-  <button id="MateriasCargadas" onclick="window.location.href='../PHP/prueba.php'">Agegar CargaMaterias</button>
-
+  <button id="AgregarMateria" ">Agegar Materia</button>
+  <div class="Agregando-Materia">
+    <form class="contenido-Agregando-Materia">
+      <div class="cerrar">+</div>
+        <h2>Agrega una Materia</h2>
+        <img class="imagen" src="../imagenes/libros.png" alt="">
+        <input name="NomMateria" id="NomMateria" type="text" placeholder="Nombre Materia">
+        <input name="Codigo" id="Codigo" type="text" placeholder="Codigo">
+        <input type="button" class="agregaMateria" value="registrar">
+    </form>
+  </div>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="../JS/materia.js?f6ssdw"></script>
+  <script src="../JS/materia.js"></script>
 </body>
 </html>

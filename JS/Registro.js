@@ -8,6 +8,8 @@ window.onload = function(){
 
     var mb3 = document.getElementById('Inicio');
     mb3.addEventListener('click', handler3);
+
+    
     
 
 }
@@ -17,7 +19,9 @@ function handler(){
 
 function handler2(){
     document.querySelector('.modelo-global').style.display = "none";
+    document.querySelector('.modelo-global2').style.display = "none";
 }
 function handler3(){
-    document.querySelector('.modelo-global2').style.display = "flex";   
+    document.querySelector('.modelo-global2').style.display = "flex";
+
 }
