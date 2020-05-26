@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<link rel="stylesheet" href="../CSS/StyleInicio.css?3daafse42">
+	</head>
+	
+	<body>
+		 <!--Barra que se carga desde la clase Staic.js-->
+		<nav class="navegacion" id="barra"></nav>
+
+		<h1 id="h1">Nombre materia</h1>
+		<!--barra perfil que se carga desde la clase Staic.js-->
+		<nav id="perfil"></nav>
+
+		<div id="Categoria"> </div>
+		   <!--contenido-->
+			<div class="contenedorInicio">
+				<nav class="CategoriaPreguntas"> 
+					<a href="#">Examen 1</a>
+					<button id="Newcategoria">Ver</button>
+					<button id="categoria" onclick="window.location.href='#'">Editar</button>
+				</nav>
+
+				<nav class="Examenes">
+					<a href="#">Examen 2</a>
+					<button id="NewExamen">Ver</button>
+					<button id="Examen" onclick="window.location.href='#'">Editar</button>
+				</nav>
+			</div>
+			
+			<div class="contenedorInicio">
+				<nav class="Alumnos">
+					<a href="#">Examen 3</a>
+					<button id="NewExamen">Ver</button>
+					<button id="Examen" onclick="window.location.href='#'">Editar</button>
+				</nav>
+				
+				<nav class="Calificaciones">
+					<a href="#">Nuevo</a>
+					<img  class="ima" src="../imagenes/crear.png">
+					<button id="Calificaciones" onclick="window.location.href='#'">Crear Examen</button>
+				</nav>
+			</div>
+			
+			<!--<script src="../JS/categoria.js"></script>-->
+			<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+			<script src="../JS/Static.js?6533"></script>
+			
+			<div id="CargaExamenes"> </div>
+ 
+			<button id="GetExamenes" onclick="window.location.href='../PHP/examen.php'">Agegar CargaMaterias</button>
+			<script src="../JS/examen.js?556ssdw"></script>
+			
+	</body>
+</html>
