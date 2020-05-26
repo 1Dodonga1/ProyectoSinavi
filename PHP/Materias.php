@@ -12,8 +12,6 @@ while($row = mysqli_fetch_array($result)){
     $json[] = array(
       'nombre'=> $row['Materia'],
       'IdMaterias'=> $row['IdMaterias']
-      
-    
     );
   }
   $jsonstring = json_encode($json);
