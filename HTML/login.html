@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Bellota+Text&display=swap" rel="stylesheet">
         <title>SINAVI | Home</title>
-        <link rel="stylesheet" href="../CSS/styles.css">
+        <link rel="stylesheet" href="../CSS/styles.css?85s52">
 
     </head>
     <body>
@@ -161,33 +161,42 @@
             <div class="contenido-modelo">
                 <div class="cerrar">+</div>
                 <img src="../imagenes/usuario.ico" alt="">
-                <form action="">
-                    <input type="text" placeholder="Correo electronico">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Apellido paterno">
-                    <input type="text" placeholder="Apellido materno">
-                    <input type="text" placeholder="Contraseña">
-                    <input type="text" placeholder="Confirma contraseña">
-                    <select name="" id="opciones">
+                <form action="../PHP/RegistroUsuario.php?fdas" method="POST">
+                    <input name="nom" type="text" >
+                    <input name="usua" type="text" >
+                    <input name="pass" type="password" >
+                    <select name="Tipo" >
                         <option value="" disabled selected>--- Tipo de Usuario ---</option>
-                        <option value="Compra">Alumno</option>
-                        <option value="Vende">Maestro</option>
+                        <option value="Alumno">Alumno</option>
+                        <option value="Profesor">Maestro</option>
                     </select>
-                    <a href="" class="button"><input type="button" class="btnRegistrarse" value ="Registrarse"></a>
+                    <input type="submit" class="btnRegistrarse" value ="Registrarse">
                 </form>
             </div>
         </div>
 		
         <div class="modelo-global2">
             <div class="contenido-modelo2">
-                <div class="cerrar">+</div>
+                <div class="cerrar	">+</div>
                 <img src="../imagenes/usuario.png" alt="">
-                <form action="">
-                    <input type="text" placeholder="Nombre">
-                    <input type="text" placeholder="Contraseña">
-                    <a href="" class="button"><input type="button" class="btnRegistrarse" value ="Iniciar"></a>
+                <form action="../PHP/ValidacionUsuario.php" method="POST">
+                    <input name="usuario" type="text" placeholder="Nombre">
+                    <input name="Password" type="password" placeholder="Contraseña">
+                    <input type="submit" class="btnRegistrarse" value ="Iniciar">
                 </form>
             </div>
-        </div>
+				</div>
+				
+				<footer class="footer-sitio seccion">
+					<div class="contenedor2 contenedor-footer">
+						<nav class="Navegacion">
+							<a href="FAQ.html">FAQ</a>
+							<a href="#" class="Registro" id="Registro">Registrarse</a>
+							<a href="#">Iniciar sesión</a>
+							<a href="#">Contacto</a>
+						</nav>
+						<p class="copyright">Todos los derechos reservados 2019 &copy;</p>
+					</div>
+				</footer>
     </body>
 </html>

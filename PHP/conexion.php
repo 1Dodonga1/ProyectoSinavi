@@ -1,5 +1,5 @@
 <?php
-$connection =   mysqli_connect( "localhost", "root", "morado", "sinav");
+$connection =   mysqli_connect( "127.0.0.1", "root", "morado", "sinav");
 
 // for testing connection
 /*if($connection) {

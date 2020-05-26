@@ -23,8 +23,9 @@ function BarraPerfil(){
     `    <ul>
       <li><img src="../imagenes/usuario.png" ></ima> </li>
       <li id="nombre">Nombre Apellido</li>
-      <li id="usuario">usuario</li>
-      <li><button id="cerrar">Cerrar</button></li>
+      <li id="usuario"><?php  echo $_SESSION['usuario'] ?></li>
+      <br>
+      <li><button onclick="location.href='../PHP/cerrarSession.php'" >Cerrar</button></li>
     </ul> `;
   $('#perfil').html(barra);
 }
