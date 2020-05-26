@@ -267,28 +267,3 @@ input select, submit, textarea{
     margin: 0;
     color: #FFFFFF;
 }
-/*input:not([type="submit"]),textarea,select{
-    padding: 1rem; 
-    display: block;
-    width: 100%;
-    background-color:  #e1e1e1;
-    margin-bottom: 2rem;
-    border: none;
-    border-radius: 1rem;
-    color: darkgray; 
-
-} 
-
-input:not([type="submit"]),textarea,select{
-    padding: 1rem; 
-    display: block;
-    width: 100%;
-    background-color:  #e1e1e1;
-    margin-bottom: 2rem;
-    border: none;
-    border-radius: 1rem;
-    color: darkgray; 
-} 
-
-
-*/  
