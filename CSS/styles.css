@@ -266,3 +266,11 @@ input select, submit, textarea{
     margin: 0;
     color: #FFFFFF;
 }
+
+/**Objetos de conflicto pasado:**/
+li, ol, ul {
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+}
