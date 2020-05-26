@@ -36,19 +36,23 @@ $(document).ready(function () {
   $(document).on('click', '#AgregarMateria', function () {
       document.querySelector('.Agregando-Materia').style.display = "flex"; 
   });
+
   $(document).on('click', '.cerrar', function () {
     document.querySelector('.Agregando-Materia').style.display = "none";
   });
+
+
   $(document).on('click', '.agregaMateria', function () {
-    let NomMateria = $("#NomMateria").val();
-    let Codigo = $("#Codigo").val();
+    var NomMateria = $("#NomMateria").val();
+    var Codigo = $("#Codigo").val();
     console.log(NomMateria);
     console.log(Codigo);
     $.ajax({
       url: '../PHP/AgregarMateria.php',
-      data: { NomMateria, Codigo },
+      data: $(".contenido-Agregando-Materia").serialize(),
       type: 'POST',
       success: function (response) {
+        console.log(response);   
         document.querySelector('.Agregando-Materia').style.display = "none";
         inicio();
       }

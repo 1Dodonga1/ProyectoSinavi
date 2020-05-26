@@ -37,11 +37,20 @@
    float: left;
 }
 /*Finnn barra de navegacon*/
+
+#Categoria {
+   display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  margin-left: 250px;
+  font-family: 'Lucida Sans';
+}
 #Categoria button{
   width: 150px;
-  height: 150px;
+  height: 130px;
   background: rgb(250, 66,82);
-  font-size: 80px;
+  margin-left: 50px;
+  font-size: 25px;
 }
 
 #categoria button:hover{
