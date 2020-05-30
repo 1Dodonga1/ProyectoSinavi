@@ -1,0 +1,46 @@
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+  padding: 20px;
+  text-align: center;
+
+}
+
+thead{
+	background-color:rgb(98, 94, 86);
+	border-bottom:  solid 5px #0F362D;
+	color: white;
+
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+
+}
+#main-container{
+  text-align: center;
+  margin-left: 180px;
+	width: 700px;
+}
+
+h1{
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 40px;
+  color: rgb(68, 61, 61);
+}
+
+input{
+  margin-left: 180px;
+  width: 700px;
+  height: 30px;
+  font-family: 'Lucida Sans';
+  font-size: 22px;
+  color: rgb(42, 41, 41);
+}
