@@ -22,8 +22,7 @@ function BarraPerfil(){
   let barra =
     `    <ul>
       <li><img src="../imagenes/usuario.png" ></ima> </li>
-      <li id="nombre"> Usuario de Sinav</li>
-      <li id="usuario">Teacher</li>
+      <li>Teacher</li>
       <br>
       <li><button onclick="location.href='../PHP/cerrarSession.php'" >Cerrar</button></li>
     </ul> `;

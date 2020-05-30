@@ -38,7 +38,7 @@
 }
 /*Finnn barra de navegacon*/
 
-#Categoria {
+/*#Categoria {
    display: flex;
   flex-direction: row;
   margin-top: 80px;
@@ -56,6 +56,14 @@
 #categoria button:hover{
  background-color: gray; 
 }
+
+.botonCategoria{
+  width: 150px;
+  height: 130px;
+  background: rgb(250, 66,82);
+  margin-left: 50px;
+  font-size: 25px;
+}*/
 /*Barra que muestra perfil*/
 #perfil{
   background:rgba(170, 160, 161, 0.664);

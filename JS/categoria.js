@@ -11,13 +11,13 @@ $(document).ready(function () {
        let cargando = '';
        categ.forEach(categoria => {
          cargando += `
-         <button >${categoria.nombre}</button> <br> `;
+         <li><a href="#">${categoria.nombre}</a></li>`;
        });
        $('#Categoria').html(cargando);
     }
   });
   }
-  $(document).on('click', '#AgregarCategoria', function () {
+  $(document).on('click', '#BotonCategoria', function () {
     document.querySelector('.Agregando-Materia').style.display = "flex";
   });
 
@@ -29,10 +29,20 @@ $(document).ready(function () {
   $(document).on('click', '.agregaMateria', function () {
     var NomMateria = $("#NomMateria").val();
     var Codigo = $("#Codigo").val();
-    console.log(NomMateria);
-    console.log(Codigo);
+  });   
+
+  $(document).on('click', '.agregaMateria', function () {
+    var NomCategoria = $("#NomMateria").val();
     $.ajax({
-     
+      url: '../PHP/AgregarCategoria.php',
+      data: {NomCategoria},
+      type: 'POST',
+      success: function (response) {
+        console.log(response);
+        document.querySelector('.Agregando-Materia').style.display = "none";
+        inicio();
       }
     });
+  });
+  
 });
