@@ -1,10 +1,10 @@
 <?php
 include ('conexion.php');
 session_start(); 
+$idMateria= $_SESSION['idMateria'];
 $_filtro=$_POST['filtro'];
-
 $query ="select IdLista, nombre from listaasistencia as lis inner join alumnos  on 
-lis.Alumnos_IdAlumnos=alumnos.IdAlumnos  where lis.Materias_IdMaterias=$idMateria and alumnos.nombre LIKE '$_filtro%'";
+lis.Alumnos_IdAlumnos=alumnos.IdAlumnos  where lis.Materias_IdMaterias=$idMateria and alumnos.nombre like '$_filtro%';";
 
 $result = mysqli_query($connection,$query);
 if(!$result) {
