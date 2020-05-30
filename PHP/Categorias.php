@@ -1,8 +1,8 @@
 <?php
 include ('../PHP/conexion.php');
  session_start();
- $nu=$_SESSION['idMateria'] ;
-$query ="select nombre from categoria where Materias_IdMaterias= $nu";
+ $nu=$_SESSION['idMateria'];
+$query ="select nombre from categoria where Materias_IdMaterias=$nu;";
 
 $result = mysqli_query($connection,$query);
 if(!$result) {

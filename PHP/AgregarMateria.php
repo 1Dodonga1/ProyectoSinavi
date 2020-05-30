@@ -1,7 +1,7 @@
 <?php 
   include ('../PHP/conexion.php');
   session_start();
-  $id= "1";
+  $id= $_SESSION['idUsuario'];
   $nombMateria= $_POST['NomMateria'];
   $Codigo= $_POST['Codigo'];
   
@@ -10,6 +10,6 @@
     if($result===TRUE){
       echo 'Materia Agregada agregado';
     }else{
-        echo $_SESSION['idUsuario'];
+        echo 'no agregada';
     }
 ?>
