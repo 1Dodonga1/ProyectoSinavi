@@ -6,7 +6,6 @@
   margin: 0px;
   background:rgb(250, 66,82);
   font-size: 15px;
-  margin-top: 0px;
 }
 .navegacion ul{
   list-style: none;
@@ -66,12 +65,12 @@
 }*/
 /*Barra que muestra perfil*/
 #perfil{
-  background:rgba(170, 160, 161, 0.664);
-  opacity:50%;
-  height: 100%;
-  width: 300px;
   float: right;
-  margin-top: 50px;
+  background:rgba(100, 97, 98, 0.664);
+  opacity:50%;
+  height: 100vh;
+  width: 300px;
+  height: calc(100vh - 50px);
 }
 #perfil li{
    text-decoration: none;
@@ -79,7 +78,6 @@
    font-size: 20px;
    font-family: 'Lucida Sans';
    list-style: none;
-   display: block;
    margin-top: 30px;
 }
 #perfil button{
