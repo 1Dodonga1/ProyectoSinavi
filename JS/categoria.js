@@ -11,7 +11,7 @@ $(document).ready(function () {
        let cargando = '';
        categ.forEach(categoria => {
          cargando += `
-         <li><a href="#">${categoria.nombre}</a></li>`;
+         <li><a href="#" id="${categoria.id}" class="cargaPanelCategoria">${categoria.nombre}</a></li>`;
        });
        $('#Categoria').html(cargando);
     }
@@ -47,5 +47,19 @@ $(document).ready(function () {
   $(document).on('click', '#cerrar', function () {
     document.querySelector('.children').style.display = "flex";
   });
-  
+
+  $(document).on('click', '.cargaPanelCategoria', function () {
+    var Idcategora =this.id;
+    var nom = $(".cargaPanelCategoria").val();
+    console.log(nom);
+    $.ajax({
+      url: '../PHP/preguntasCategoria.php',
+      data: { Idcategora },
+      type: 'GET',
+      success: function (response) {
+        console.log(response);
+        document.querySelector('.contenidoCategoria').style.display = "flex";
+      }
+    });
+  });
 });
