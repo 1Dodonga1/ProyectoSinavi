@@ -44,15 +44,15 @@
         <button id="Lista" onclick="window.location.href='../HTML/alumnos.html'">Lista de alumnos</button>
       </nav>
       <nav class="Calificaciones">
-        <a href="../HTML/calificaciones.html">Calificaciones</a>
+        <a href="../HTML/calificaciones.php">Calificaciones</a>
         <img  class="ima" src="../imagenes/califica.jpg">
-        <button id="Calificaciones" onclick="window.location.href='../HTML/calificaciones.html'">revisar Calificaciones</button>
+        <button id="Calificaciones" onclick="window.location.href='../HTML/calificaciones.php'">revisar Calificaciones</button>
       </nav>
   </div>
     
 
     <!--<script src="../JS/categoria.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="../JS/Static.js?6533"></script>
+    <script src="../JS/Static.js?6f"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+*{ margin: 0; padding: 0; }
 html{
     box-sizing: border-box; 
     font-size: 62.5%; /*Reset para Rems 62.5% = 10px de 16px*/
@@ -53,7 +54,8 @@ h4{
 }
 
 .header-fondo{
-    margin: 0;
+    padding: none;
+    margin-top: 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,10 +83,9 @@ h4{
 /**Imagen central**/
 .imagen-fondo{
     background-image: url(../imagenes/study-hard-for-exam.png);
-    background-position: center center;
+    background-position: center;
     background-size: cover;
-    height: 87.43vh;
-    min-height: 60vh;
+    height: 700px;
     margin-top: 0;
 }
 .texto{
@@ -95,7 +96,8 @@ h4{
     max-width: 80rem;
     line-height: 1.5;
     font-size: 2.4rem;
-
+    height: 700px;
+    
 }
 .title{
     font-size: 5rem;

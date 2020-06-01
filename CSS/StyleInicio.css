@@ -1,7 +1,6 @@
 *{ margin: 0; padding: 0; }
 /*barra de navegacon*/
 .navegacion{
-  
   width: 100%;
   height: 60px;
   margin: 0px;
@@ -37,24 +36,41 @@
    float: left;
 }
 /*Finnn barra de navegacon*/
+
+/*#Categoria {
+   display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  margin-left: 250px;
+  font-family: 'Lucida Sans';
+}
 #Categoria button{
   width: 150px;
-  height: 150px;
+  height: 130px;
   background: rgb(250, 66,82);
-  font-size: 80px;
+  margin-left: 50px;
+  font-size: 25px;
 }
 
 #categoria button:hover{
  background-color: gray; 
 }
+
+.botonCategoria{
+  width: 150px;
+  height: 130px;
+  background: rgb(250, 66,82);
+  margin-left: 50px;
+  font-size: 25px;
+}*/
 /*Barra que muestra perfil*/
 #perfil{
-  background:rgba(170, 160, 161, 0.664);
-  opacity:50%;
-  height: 400px;
-  width: 300px;
   float: right;
-  margin-top: 50px;
+  background:rgba(100, 97, 98, 0.664);
+  opacity:50%;
+  height: 100vh;
+  width: 300px;
+  height: calc(100vh - 50px);
 }
 #perfil li{
    text-decoration: none;
@@ -62,7 +78,6 @@
    font-size: 20px;
    font-family: 'Lucida Sans';
    list-style: none;
-   display: block;
    margin-top: 30px;
 }
 #perfil button{
@@ -131,21 +146,35 @@ background:rgb(190, 185, 185);
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  margin-left: 250px;
+  
   font-family: 'Lucida Sans';
 }
 
-#CargaMaterias button{
+ #CargaMaterias button{
   background: rgba(26, 20, 20, 0.719);
   height: 50px;
-  width: 70%;
+  width: 60%;
   margin-top: 30px;
+  margin-left: 250px;
   font-size: 18px;
   color: beige;
 }
-#CargaMaterias button:hover{
+ #CargaMaterias button:hover{
   background: rgba(78, 61, 61, 0.719);
 }
+
+ #AgregarMateria{
+   background: rgba(26, 20, 20, 0.719);
+  height: 50px;
+  width: 60%;
+  margin-top: 30px;
+  margin-left: 250px;
+  font-size: 18px;
+  color: beige; 
+  background: rgba(93, 190, 48, 0.719);
+}
+
+
 .img{
   width: 100%;
   height: 200px;  
@@ -157,4 +186,47 @@ background:rgb(190, 185, 185);
   margin-top: 20px;
   font-size: 25px;
 
+}
+
+.Agregando-Materia{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     display: none;
+    
+}
+.contenido-Agregando-Materia{
+  width: 50%;
+    height: 60%;
+    background-color:white;
+    border-radius: 1.5rem;
+    text-align: center;
+    padding: 0%;
+    position: relative;
+}
+
+.cerrar{
+    position: absolute;
+    top: -4rem;
+    right: 1.4rem;
+    font-size: 4.2rem;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+input{
+    width: 50%;
+    display: block;
+    margin: 1.5rem auto;
+
+}
+
+.imagen{
+  width: 150px;
+  height: 150px;
 }
