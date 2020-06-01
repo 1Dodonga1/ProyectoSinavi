@@ -11,7 +11,7 @@ $(document).ready(function () {
           let cargando = '';
           mate.forEach(productos => {
             cargando += `
-            <li><a href="#" id="${productos.id}">${productos.nombre}</a></li>
+            <li><a href="#" id="${productos.nombre}" class="MuestrameCali">${productos.nombre}</a></li>
           `;
           });
           $('#filtro_alumnos').html(cargando);
@@ -23,4 +23,26 @@ $(document).ready(function () {
     }
   }); 
 
+  $(document).on('click', '.MuestrameCali', function () {
+    let id = this.id;
+    $.ajax({
+      url: '../PHP/CalicacionExamen.php',
+      type: 'GET',
+      success: function (response) {
+        
+        let categ = JSON.parse(response);
+        let cargando = "<h1>"+id+"</h1><br>";
+        categ.forEach(Calificacion => {
+          cargando += `
+         <nav class="calificacion_examen">
+            <h6>${Calificacion.nombre}</h6><h6>${Calificacion.cali}</h6>
+         </nav>
+         `;
+        });
+        document.querySelector('.contenido_Calificaciones').style.display = "flex";
+        $('.contenido_Calificaciones').html(cargando);
+      }
+    });
+  
+   });
 });

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../CSS/StyleInicio.css?63ddd5">
-    <link rel="stylesheet" href="../CSS/barraLatetal.css?hkgh">
+    <link rel="stylesheet" href="../CSS/barraLatetalCategoria.css?hgfh">
   <title>Document</title>
 </head>
 <body>
@@ -18,13 +18,25 @@
     </ul>
     <button id="BotonCategoria"> Agregar cartegoria</button>
   </div>
+
+  <!--Contenido de categotia-->
   <div class="contenidoCategoria">
    <h1>Nombre Categoria</h1>
-   <button>Agrgar pregunta</button>
-   <ul>
-     <li>UNO</li>
-     
-     <li>DOS</li>
+   <button id="AgregaPregunta">Agregar pregunta</button>
+   
+   <ul class="padre">
+    <li><a href="#">Pregunta 1 </a><img src="../imagenes/flechaAbajo.ico" class="iconos" id="cerrar"><img src="../imagenes/boteBasura.ico" class="iconos" id="eliminar"></li>
+    <ul class="children">
+      <li><a href="#">res 1</a><button>eliminar</button></li>
+      <li><a href="#">res 2</a><button>eliminar</button></li>
+      <li><button id="agregaRespuesta">Agrega una respuesta</button></li>
+    </ul>
+    <li><a href="#">Pregunta 2</a> <img src="../imagenes/flechaAbajo.ico" class="iconos" id="cerrar"><img src="../imagenes/boteBasura.ico" class="iconos" id="eliminar"></li>
+     <ul class="children">
+        <li><a href="#">res 1</a><button>eliminar</button></li>
+        <li><a href="#">res 2</a><button>eliminar</button></li>
+        <li><button id="agregaRespuesta">Agrega una respuesta</button></li>
+     </ul>
    </ul>
 
   </div>
@@ -40,7 +52,7 @@
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="../JS/Static.js?fsdfar"></script>
-<script src="../JS/categoria.js?dess"></script>
+<script src="../JS/categoria.js?ddess"></script>
 <script src="../JS/barraLateral.js?hhj"></script>
 </body>
 </html>

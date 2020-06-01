@@ -44,9 +44,9 @@
         <button id="Lista" onclick="window.location.href='../HTML/alumnos.html'">Lista de alumnos</button>
       </nav>
       <nav class="Calificaciones">
-        <a href="../HTML/calificaciones.html">Calificaciones</a>
+        <a href="../HTML/calificaciones.php">Calificaciones</a>
         <img  class="ima" src="../imagenes/califica.jpg">
-        <button id="Calificaciones" onclick="window.location.href='../HTML/calificaciones.html'">revisar Calificaciones</button>
+        <button id="Calificaciones" onclick="window.location.href='../HTML/calificaciones.php'">revisar Calificaciones</button>
       </nav>
   </div>
     
