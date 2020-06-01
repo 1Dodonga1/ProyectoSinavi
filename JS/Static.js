@@ -8,7 +8,7 @@ function BarraInicio(){
   let barra=
      `     <img id="ima" src="../imagenes/Untitled-1.png" class="logo">
           <ul class="menu">
-            <li><a href="../HTML/inicio.php">Categorias</a></li>
+            <li><a href="../HTML/inicio.php">Inicio</a></li>
             <li><a href="../HTML/categoria.html">Categorias</a></li>
             <li><a href="../HTML/examen.html">Examenes</a></li>
             <li><a href="../HTML/alumnos.html">Alumnos</a></li>
