@@ -26,7 +26,7 @@ $(document).ready(function () {
     document.querySelector('.Agregando-Materia').style.display = "none";
   });
 
-  //agregar materia
+  //agregar categoria
   $(document).on('click', '.agregaMateria', function () {
     var NomCategoria = $("#NomMateria").val();
     $.ajax({
@@ -69,8 +69,7 @@ $(document).ready(function () {
  //para cargar las respuestas y poderlas hacer visibles
   $(document).on('click', '.abrir', function () {
     var id= this.id;
-    var Idcategora = "#children-"+this.id;
-    console.log(Idcategora);  
+    var Idcategora = "#children-"+this.id; 
     if (banderaMostrarPreguntas == 0) {
       $.ajax({
         url: '../PHP/respuestasPreguntass.php',
@@ -111,4 +110,20 @@ $(document).ready(function () {
   $(document).on('click', '.cerrar', function () {
     document.querySelector('.Agregando-respuesta').style.display = "none";
   });
+
+  //agrgar pregunta
+  $(document).on('click', '.agregaPreg', function () {
+    $.ajax({
+      url: '../PHP/AgregaPreguntas.php',
+      data:  $("#aPregunta").serialize(),
+      type: 'Post',
+      success: function (response) {
+        console.log(response);
+        document.querySelector('.Agregando-respuesta').style.display = "none";
+        inicio();
+      }
+    });
+  });
+
+  
 });
