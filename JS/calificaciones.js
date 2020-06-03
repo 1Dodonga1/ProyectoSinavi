@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+  //filtro para buacar alumnos
   $('#filtroAlumno').keyup(function () {
     if ($('#filtroAlumno').val()) {
       let filtro = $("#filtroAlumno").val();
@@ -22,7 +24,7 @@ $(document).ready(function () {
       $('#filtro_alumnos').html(cargando);
     }
   }); 
-
+   //para mostrar cuantas las calificaciones
   $(document).on('click', '.MuestrameCali', function () {
     let id = this.id;
     $.ajax({

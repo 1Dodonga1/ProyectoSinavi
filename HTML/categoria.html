@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/StyleInicio.css?63ddd5">
-    <link rel="stylesheet" href="../CSS/barraLatetalCategoria.css?hgfh">
+    <link rel="stylesheet" href="../CSS/StyleInicio.css?63s5">
+    <link rel="stylesheet" href="../CSS/barraLatetalCategoria.css?ffddh">
   <title>Document</title>
 </head>
 <body>
   <nav class="navegacion" id="barra"></nav>
   <nav id="perfil"></nav>
+  
+  <!--Barra lateral-->
   <div id="sidebar">
     <div class="toggle-btn">
     <span>&#9776</span>
@@ -19,9 +21,9 @@
     <button id="BotonCategoria"> Agregar cartegoria</button>
   </div>
 
-  <!--Contenido de categotia-->
+  <!--Contenedor de  categotia que trae con sigo todas las preguntas-->
   <div class="contenidoCategoria">
-   <h1>Nombre Categoria</h1>
+   <h1 id="nombre Categoria">Nombre Categoria</h1>
    <button id="AgregaPregunta">Agregar pregunta</button>
    
    <ul class="padre">
@@ -40,6 +42,8 @@
    </ul>
 
   </div>
+
+  <!--formulario para agregar una materia-->
   <div class="Agregando-Materia">
     <form class="contenido-Agregando-Materia" action="">
       <div class="cerrar">+</div>
@@ -49,10 +53,38 @@
       <input type="submit" class="agregaMateria" value="registrar">
     </form>
   </div>
+   
+  <!--formulario para agregar una Pregunta-->
+  <div class="Agregando-Pregunta">
+    <form class="contenido-Agregando-Materia" action="" id="aPregunta">
+      <div class="cerrar">+</div>
+      <h2>Agrega Pregunta</h2>
+      <img class="imagen" src="../imagenes/pregunta.png" alt="">
+      <input name="Descripcion" id="NomMateria" type="text" placeholder="Escreibe una pregunta">
+      <select name="Tipo">
+        <option value="" disabled selected>--- Tipo de Pregunta ---</option>
+        <option value="1">Opcion multiple</option>
+        <option value="2">Verdadero, Falso</option>
+        <option value="3">Numerica</option>
+      </select>
+      <input type="submit" class="agregaPreg" value="registrar">
+    </form>
+  </div>
+  <!--formulario para agregar respuestas-->
+  <div class="Agregando-respuesta">
+    <form class="contenido-Agregando-Materia"  action="">
+      <div class="cerrar">+</div>
+      <h2>Agrega Pregunta</h2>
+      <img class="imagen" src="../imagenes/respuestas.png" alt="">
+      <input name="Descripcion" id="NomMateria" type="text" placeholder="Escreibe una respuesta">
+      <input name="Calificacion" id="NomMateria" type="text" placeholder="Calificacion">
+      <input type="submit" class="agregRespu" value="registrar">
+    </form>
+  </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="../JS/Static.js?fsdfar"></script>
-<script src="../JS/categoria.js?ddess"></script>
-<script src="../JS/barraLateral.js?hhj"></script>
+<script src="../JS/Static.js?fsdfafdr"></script>
+<script src="../JS/categoria.js?ddad"></script>
+<script src="../JS/barraLateral.js?hsj"></script>
 </body>
 </html>
