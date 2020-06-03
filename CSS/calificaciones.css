@@ -29,6 +29,7 @@ input{
 .contenido_filtro a{
  text-decoration: none;
  color: aliceblue;
+ 
 }
 
 .contenido_filtro a:hover{  
@@ -41,7 +42,7 @@ input{
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  display:none;
+  display: none;
 }
 .calificacion_examen {
    height: 80px;
@@ -51,16 +52,18 @@ input{
    background-color: rgb(138, 133, 133); 
    border-radius: 10px;
 }
-.calificacion_examen h6{
-  color: antiquewhite;
-   font-size: 20px;
-   text-align: center;
-   margin-top: 10px;
+.contenido_Calificaciones h6{
+  color: rgb(230, 223, 215);
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  
 }
 
 .contenido_Calificaciones h1{
-   margin-top: 20px;
-   margin-left: 10px;
+   margin-top: 0px;
+   margin-left: 300px;
+   margin-right: 200px;
    color: rgb(58, 60, 61);
    font-family: 'Lucida Sans';
    text-align: center;

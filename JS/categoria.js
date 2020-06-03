@@ -34,7 +34,6 @@ $(document).ready(function () {
       data: {NomCategoria},
       type: 'POST',
       success: function (response) {
-        console.log(response);
         document.querySelector('.Agregando-Materia').style.display = "none";
         inicio();
       }
@@ -70,6 +69,7 @@ $(document).ready(function () {
   $(document).on('click', '.abrir', function () {
     var id= this.id;
     var Idcategora = "#children-"+this.id; 
+    var nombre="";
     if (banderaMostrarPreguntas == 0) {
       $.ajax({
         url: '../PHP/respuestasPreguntass.php',
@@ -87,7 +87,7 @@ $(document).ready(function () {
           $(''+Idcategora+'').html(cargando);
           document.querySelector('' + Idcategora + '').style.display = "block";
         }
-      }); 
+      });
       banderaMostrarPreguntas = 1; 
     } else if (banderaMostrarPreguntas == 1){
       banderaMostrarPreguntas = 0;
@@ -116,6 +116,19 @@ $(document).ready(function () {
     $.ajax({
       url: '../PHP/AgregaPreguntas.php',
       data:  $("#aPregunta").serialize(),
+      type: 'Post',
+      success: function (response) {
+        console.log(response);
+        document.querySelector('.Agregando-respuesta').style.display = "none";
+        inicio();
+      }
+    });
+  });
+  //Eliminar pregunta
+  $(document).on('click', '.agregaPreg', function () {
+    $.ajax({
+      url: '../PHP/AgregaPreguntas.php',
+      data: $("#aPregunta").serialize(),
       type: 'Post',
       success: function (response) {
         console.log(response);

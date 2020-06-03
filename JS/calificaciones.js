@@ -33,7 +33,7 @@ $(document).ready(function () {
       success: function (response) {
         
         let categ = JSON.parse(response);
-        let cargando = "<h1>"+id+"</h1><br>";
+        let cargando = "<h1>" + id +"</h1>";
         categ.forEach(Calificacion => {
           cargando += `
          <nav class="calificacion_examen">
@@ -41,7 +41,7 @@ $(document).ready(function () {
          </nav>
          `;
         });
-        document.querySelector('.contenido_Calificaciones').style.display = "flex";
+        document.querySelector('.contenido_Calificaciones').style.display = "-webkit-flex";
         $('.contenido_Calificaciones').html(cargando);
       }
     });
