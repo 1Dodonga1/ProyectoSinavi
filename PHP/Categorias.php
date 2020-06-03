@@ -2,7 +2,7 @@
 include ('../PHP/conexion.php');
  session_start();
  $nu=$_SESSION['idMateria'];
-$query ="select nombre from categoria where Materias_IdMaterias=$nu;";
+$query ="select nombre,IdCategoria  from categoria where Materias_IdMaterias=$nu;";
 
 $result = mysqli_query($connection,$query);
 if(!$result) {
@@ -11,7 +11,8 @@ if(!$result) {
 $json = array();
 while($row = mysqli_fetch_array($result)){
     $json[] = array(
-      'nombre' => $row['nombre']
+      'nombre' => $row['nombre'],
+      'id' => $row['IdCategoria']
     );
   }
   $jsonstring = json_encode($json);
