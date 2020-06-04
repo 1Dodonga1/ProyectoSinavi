@@ -1,9 +1,9 @@
 <?php
   //traerme las preguntas de bd
-  $id=$_POST['Idcategora'];
   include ('../PHP/conexion.php');
   session_start();
-  $_SESSION['Idcategora']=$id;
+  $id=$_POST['Idcategora'];
+  $_SESSION['Idcategoria']=$id;
   $query ="select IdPreguntas, Descripcion, TipoPregunta_IdTipos from preguntas where Categoria_IdCategoria=$id;";
   $result = mysqli_query($connection,$query);
 
@@ -16,7 +16,7 @@
     $json[] = array(
       'IdPreguntas'=> $row['IdPreguntas'],
       'Descripcion'=> $row['Descripcion'],
-      'tPregunta<'=> $row['TipoPregunta_IdTipos']
+      'tPregunta'=> $row['TipoPregunta_IdTipos']
     );
   }
   $jsonstring = json_encode($json);

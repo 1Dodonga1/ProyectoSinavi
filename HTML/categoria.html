@@ -56,7 +56,7 @@
    
   <!--formulario para agregar una Pregunta-->
   <div class="Agregando-Pregunta">
-    <form class="contenido-Agregando-Materia" action="" id="aPregunta">
+    <form class="contenido-Agregando-Materia"  id="aPregunta">
       <div class="cerrar">+</div>
       <h2>Agrega Pregunta</h2>
       <img class="imagen" src="../imagenes/pregunta.png" alt="">
@@ -72,19 +72,26 @@
   </div>
   <!--formulario para agregar respuestas-->
   <div class="Agregando-respuesta">
-    <form class="contenido-Agregando-Materia"  action="">
+    <form class="contenido-Agregando-Materia"  id="aRespuesta">
       <div class="cerrar">+</div>
-      <h2>Agrega Pregunta</h2>
+      <h2>Agrega Respuesta</h2>
       <img class="imagen" src="../imagenes/respuestas.png" alt="">
-      <input name="Descripcion" id="NomMateria" type="text" placeholder="Escreibe una respuesta">
-      <input name="Calificacion" id="NomMateria" type="text" placeholder="Calificacion">
-      <input type="submit" class="agregRespu" value="registrar">
+      <input name="Descripcion"  id="Descripcion" type="text" placeholder="Escreibe una respuesta">
+      <div class="tipoPregunta">
+      <input name="Calificacion" id="Calificacion" type="text" placeholder="Calificacion">
+      <h4>En caso que  tu respuesta es(f/v) sera equivalente a</h4>
+      <h4>Falso=0 si es verdadero=1</h4>
+      <h4>Si es numerica solo ingresar el numero</h4>
+      </div>
+      <div class="agregarBoton">
+      <!--<input type="submit" class="agregaRespu" value="registrar">-->
+      </div>
     </form>
   </div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="../JS/Static.js?fsdfafdr"></script>
-<script src="../JS/categoria.js?ddajd"></script>
+<script src="../JS/categoria.js?dd"></script>
 <script src="../JS/barraLateral.js?hsj"></script>
 </body>
 </html>
