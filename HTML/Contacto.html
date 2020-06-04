@@ -24,27 +24,30 @@
                 </div>
             </div>
         </header>
+        
+        
         <h2 class="centrar-texto fw300">Contacto</h2>
         <main class=" contenedor2  margenes"> 
-            <form action="">
+            <form action="../PHP/Enviar.php" method="POST" name="contacto" id="contacto">
                 <fieldset>
                     <legend>INFORMACION PERSONAL NECESARIA</legend>
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+                    <input name="nombre" type="text" id="nombre" placeholder="Ingresa tu nombre" required>
 
                     <label for="E-mail">E-mail</label>
-                    <input type="email" id="E-mail" placeholder="Correo electronico" required>
+                    <input name="email" type="email" id="E-mail" placeholder="Correo electronico" required>
 
                     <label for="telefono">Telefono</label>
-                    <input type="tel" id="telefono" placeholder="Pon tu celular" required>
+                    <input name="telefono" type="tel" id="telefono" placeholder="Pon tu celular" required>
 
                     <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10">Tu mensaje para nosotros va aqui...</textarea>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingresa lo que quieras"></textarea>
                 </fieldset>
                 <input type="submit" value="Enviar" class="btnRegistrarse">
-
             </form>
 
+       
+       
         </main>
         <footer class="footer-sitio seccion">
             <div class="contenedor2 contenedor-footer">

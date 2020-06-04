@@ -1,5 +1,4 @@
 <?php
-
  include ('../PHP/conexion.php');
   session_start();
   $usua= $_GET['usuario'];
