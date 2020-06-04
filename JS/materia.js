@@ -8,6 +8,7 @@ $(document).ready(function () {
       url: '../PHP/Materias.php',
       type: 'GET',
       success: function (response) {
+          console.log(response);
         let mate = JSON.parse(response);
         let cargando = '';
         mate.forEach(materias => {

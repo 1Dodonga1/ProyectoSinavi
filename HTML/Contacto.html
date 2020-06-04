@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contactanos</title>
+        <link rel="stylesheet" href="../CSS/styles.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="contenedor">
+                <div class="header-fondo">
+                    <div class="imagenes-header">
+                        <a href="login.html">
+                            <img src="../imagenes/Untitled-1.png" alt="" class="vizagi" >
+                            <!--<img src="../imagenes/logoP1.png" alt="" class="vizagi" >-->
+                        </a>
+                    </div>
+                    <nav class="navegacion">
+                        <a href="login.html">Volver/Inicio</a>
+                        <a href="FAQ.html">FAQ</a>
+                        <!--<input type="button" value="Registrarse">-->
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        
+        <h2 class="centrar-texto fw300">Contacto</h2>
+        <main class=" contenedor2  margenes"> 
+            <form action="../PHP/Enviar.php" method="POST" name="contacto" id="contacto">
+                <fieldset>
+                    <legend>INFORMACION PERSONAL NECESARIA</legend>
+                    <label for="nombre">Nombre</label>
+                    <input name="nombre" type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+
+                    <label for="E-mail">E-mail</label>
+                    <input name="email" type="email" id="E-mail" placeholder="Correo electronico" required>
+
+                    <label for="telefono">Telefono</label>
+                    <input name="telefono" type="tel" id="telefono" placeholder="Pon tu celular" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingresa lo que quieras"></textarea>
+                </fieldset>
+                <input type="submit" value="Enviar" class="btnRegistrarse" onclick='alert("MENSAJE ENVIADO.")' >
+            </form>
+
+       
+       
+        </main>
+        <footer class="footer-sitio seccion">
+            <div class="contenedor2 contenedor-footer">
+                <nav class="Navegacion">
+                    <a href="FAQ.html">FAQ</a>
+                    <a href="login.html">Volver/Inicio</a>
+                </nav>
+                <p class="copyright">Todos los derechos reservados 2019 &copy;</p>
+            </div>
+        </footer>
+    </body>
+</html>
