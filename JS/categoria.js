@@ -62,7 +62,6 @@ $(document).ready(function () {
   });
 
   //para cargar las preguntas
-
   $(document).on('click', '.cargaPanelCategoria', function () {
     var Idcategora =this.id;
     var n = event.target;
@@ -154,7 +153,7 @@ $(document).ready(function () {
       type: 'POST',
       success: function (response) {
         console.log(response);
-        document.querySelector('.Agregando-respuesta').style.display = "none";
+        document.querySelector('.Agregando-Pregunta').style.display = "none";
         actualizacionPreguntas();
       }
     });
