@@ -1,8 +1,12 @@
 <?php
   session_start();
   $NomMateria = $_SESSION['nombreMateria'];
+  $codigo= $_SESSION['codigo'];
+  $nombreProfe=$_SESSION['nombre'];
+  $usuario=$_SESSION['idUsuario'];
   if($NomMateria== null || $NomMateria=''){
     echo 'seleciona una materia';
+    die;
   }
 ?>
 <!DOCTYPE html>
@@ -10,14 +14,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
-  <link rel="stylesheet" href="../CSS/StyleInicio.css?3daafse42">
+  <link rel="stylesheet" href="../CSS/StyleInicio.css?3daaf2">
 </head>
 <body>
   <!--Barra que se carga desde la clase Staic.js-->
   <nav class="navegacion" id="barra"></nav>
   <!--barra perfil que se carga desde la clase Staic.js-->
-  <h1 id="h1"><?php  echo $_SESSION['nombreMateria']?></h1>
   <nav id="perfil"></nav>
+  <h1 id="h1"><?php  echo $_SESSION['nombreMateria']?></h1>
+  <button class="eliminarMateria" >Eliminar Materia</button>
 
   <div id="Categoria"> </div>
    <!--contenido-->
@@ -52,6 +57,7 @@
 
     <!--<script src="../JS/categoria.js"></script>-->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="../JS/Static.js?6f"></script>
+    <script src="../JS/Static.js?6gs"></script>
+    <script src="../JS/inicio.JS?6fS"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@ $(document).ready(function () {
 //crea la barra del header al mandar a llamar el js
 function BarraInicio(){
   let barra=
-     `     <img id="ima" src="../imagenes/Untitled-1.png" class="logo">
+     `     <a href="../HTML/materias.html"><img id="ima" src="../imagenes/Untitled-1.png" class="logo"><a>
           <ul class="menu">
             <li><a href="../HTML/inicio.php">Inicio</a></li>
             <li><a href="../HTML/categoria.html">Categorias</a></li>
@@ -19,10 +19,11 @@ function BarraInicio(){
 
 //crea la barra perfil al mandar a llamar el js
 function BarraPerfil(){
-  let barra =
-    `    <ul>
+  let barra = 
+    `  
+    <ul>
       <li><img src="../imagenes/usuario.png" ></ima> </li>
-      <li>Teacher</li>
+      <li><?php echo $_SESSION['nombre'] ?> </li>
       <br>
       <li><button onclick="location.href='../PHP/cerrarSession.php'" >Cerrar</button></li>
     </ul> `;
