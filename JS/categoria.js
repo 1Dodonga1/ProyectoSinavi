@@ -7,15 +7,36 @@ $(document).ready(function () {
     url: '../PHP/Categorias.php',
     type: 'GET',
      success: function (response) {
+       console.log(response);
        let categ = JSON.parse(response);
        let cargando = '';
        categ.forEach(categoria => {
          cargando += `
-         <li><a href="#" id="${categoria.id}" class="cargaPanelCategoria">${categoria.nombre}</a></li>`;
-       });
+         <li><a href="#" id="${categoria.id}" name="${categoria.nombre}" class="cargaPanelCategoria">${categoria.nombre}</a></li>`;
+        });
        $('#Categoria').html(cargando);
     }
   });
+  }
+  function actualizacionPreguntas(){
+    $.ajax({
+      url: '../PHP/ActualizarPreguntas.php',
+      type: 'POST',
+      success: function (response) {
+        let categ = JSON.parse(response);
+        let cargando = '';
+        categ.forEach(categoria => {
+          cargando += `
+          <li><a href="#">${categoria.Descripcion} "${categoria.tPregunta}"</a><img src="../imagenes/flechaAbajo.ico"
+           class="abrir" name="${categoria.tPregunta}" id="${categoria.IdPreguntas}"><img src="../imagenes/boteBasura.ico" 
+           class="eliminar" id="${categoria.IdPreguntas}"></li>
+           <ul class="children" id="children-${categoria.IdPreguntas}"></ul>
+          `;
+        });
+        $('.padre').html(cargando);
+        document.querySelector('.contenidoCategoria').style.display = "block";
+      }
+    }); 
   }
  //para hacer visible el formulario de agregar materia
   $(document).on('click', '#BotonCategoria', function () {
@@ -44,6 +65,9 @@ $(document).ready(function () {
 
   $(document).on('click', '.cargaPanelCategoria', function () {
     var Idcategora =this.id;
+    var n = event.target;
+    var nombre = n.name;//tipo de pregunta
+    console.log(nombre); 
     $.ajax({
       url: '../PHP/preguntasCategoria.php',
       data: { Idcategora },
@@ -60,6 +84,8 @@ $(document).ready(function () {
           `;
       });
         $('.padre').html(cargando);
+        var nom = '<h1>'+nombre+'</h1>';
+        $('#nombre_Categoria').html(nom);
         document.querySelector('.contenidoCategoria').style.display = "block";
       }
     }); 
@@ -85,17 +111,17 @@ $(document).ready(function () {
           <li><a href="#">${categoria.Descripcion}</a> <button id="${categoria.id}" Class="eliminaRespuesta">eliminar</button></li>
           `;
           });
-          cargando += '<li><button class="agregaRespuesta"  name="'+tipo+'"id="'+id+'">Agrega una respuesta</button></li>';
+          cargando += '<li><button class="agregaRespuesta"  name="'+tipo+'" id="'+id+'">Agrega una respuesta</button></li>';
           $(''+Idcategora+'').html(cargando);
           document.querySelector('' + Idcategora + '').style.display = "block";
         }
       });
       banderaMostrarPreguntas = 1; 
-      console.log(banderaMostrarPreguntas);
+      //console.log(banderaMostrarPreguntas);
     } else if (banderaMostrarPreguntas == 1){
       banderaMostrarPreguntas = 0;
       document.querySelector('' + Idcategora + '').style.display = "none";
-      console.log(banderaMostrarPreguntas);
+      //console.log(banderaMostrarPreguntas);
     }
   });
 
@@ -110,7 +136,9 @@ $(document).ready(function () {
   //hacer visibles contenedores para agregar respuesta
   $(document).on('click', '.agregaRespuesta', function () {
     var id = this.id; //id de la pregunta
-    let boton='<input type="submit" id class="agregaRespu" value="registrar">';  //agrege el boton dinamicamente para que tenga el el id de la pregunta
+    var t = event.target;
+    var tipo = t.name;//tipo de pregunta
+    let boton ='<input type="button" id="'+id+'" name="'+tipo+'"class="agregaRespu" value="registrar">';  //agrege el boton dinamicamente para que tenga el el id de la pregunta
     document.querySelector('.Agregando-respuesta').style.display = "flex";
     $('.agregarBoton').html(boton);
   });
@@ -122,12 +150,12 @@ $(document).ready(function () {
   $(document).on('click', '.agregaPreg', function () {
     $.ajax({
       url: '../PHP/AgregaPreguntas.php',
-      data:  $("#aPregunta").serialize(),
-      type: 'Post',
+      data: $("#aPregunta").serialize(),
+      type: 'POST',
       success: function (response) {
         console.log(response);
         document.querySelector('.Agregando-respuesta').style.display = "none";
-        
+        actualizacionPreguntas();
       }
     });
   });
@@ -138,17 +166,38 @@ $(document).ready(function () {
     var tipo = t.name;//tipo de pregunta
     var Descripcion = $("#Descripcion").val();
     var Calificacion = $("#Calificacion").val();
-    
+    console.log(t.id);
+    console.log(Descripcion);
     $.ajax({
       url: '../PHP/AgregaRespuesta.php',
       data: { id, tipo, Descripcion, Calificacion},
       type: 'POST',
       success: function (response) {
         console.log(response);
-        //document.querySelector('.Agregando-respuesta').style.display = "none";
-      }
+        document.querySelector('.Agregando-respuesta').style.display = "none";
+        actualizacionPreguntas();
+      } 
     });
   });
 
-  
+  //eliminar pregunta
+  $(document).on('click', '.eliminar', function () {  
+    if (confirm('Estas seguro(a) de eliminar esta pregunta?')) {
+      var id = this.id; //id de la pregunta
+      $.post('../PHP/eliminarPregunta.php?jds', { id }, (response) => {
+        console.log(response);
+        actualizacionPreguntas();
+      });
+    }
+  });
+  //eliminar respuesta
+  $(document).on('click', '.eliminaRespuesta', function () {
+    if (confirm('Estas seguro(a) de eliminar esta respuesta?')) {
+      var id = this.id; //id de la pregunta
+      $.post('../PHP/eliminarRespuesta.php', { id }, (response) => {
+        console.log(response);
+        actualizacionPreguntas();
+      });
+    }
+  });
 });

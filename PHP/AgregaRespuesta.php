@@ -4,7 +4,7 @@
   $tipo=$_POST['tipo'];
   $descripcion=$_POST['Descripcion'];
   $califiacion=$_POST['Calificacion'];
-  switch($tipo){
+  switch($tipo){  
     case 1:
    $query="INSERT INTO respuesta (Descripcion, calificacion, boleano, Preguntas_IdPreguntas) 
       VALUES ('$descripcion', '$califiacion ', '0', '$id');";
