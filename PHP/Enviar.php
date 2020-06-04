@@ -58,6 +58,7 @@ try {
     echo "Hubo un error al mandar el correo: {$mail->ErrorInfo}";
 }
 
+header("Location: ../HTML/Contacto.html");
 
 
 
