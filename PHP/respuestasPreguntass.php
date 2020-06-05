@@ -1,6 +1,8 @@
 <?php
   //traerme las preguntas de bd
-  $id=$_POST['id'];
+  session_start();
+  $_SESSION['IdPregunta']=$_POST['id'];
+  $id=$_SESSION['IdPregunta'];
   include ('../PHP/conexion.php');
 
   $query ="select idRespuesta,Descripcion,calificacion, boleano from respuesta where Preguntas_IdPreguntas=$id;";

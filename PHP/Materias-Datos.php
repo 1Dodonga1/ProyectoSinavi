@@ -1,6 +1,7 @@
 <?php
 include ('../PHP/conexion.php');
-
+//consulta de los datos de la materia seleccionada y creacion de las varibles 
+//session para poder utilizarlas en el trascurso
 $id=$_POST['id'];
 $query ="select *from materias where 	IdMaterias=$id;";
 

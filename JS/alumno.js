@@ -47,7 +47,7 @@ $(document).ready(function () {
     }
   });
   $(document).on('click', '#eliminar', (e) => {
-    if (confirm('Estas seguro(a) de eliminar este alumno(Si ya tiene calificaciones no podras eliminarlo)?')) {
+    if (confirm('Estas seguro(a) de eliminar este alumno(eliminaras todo lo relacionado con el)?')) {
       const element = $(this)[0].activeElement.parentElement.parentElement;
       const id = $(element).attr('CateID');
       $.post('../PHP/EliminarAlumno.php', { id }, (response) => {

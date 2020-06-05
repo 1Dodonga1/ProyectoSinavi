@@ -136,9 +136,9 @@ background:rgb(190, 185, 185);
 
 .ima{
   position: absolute;
-  width: 300px;
+  width: 22%;
   height: 180px;
-  display: block;
+  display:flex;
   
 }
 /*--------estilo correspondiente a Materias.thml-----*/
@@ -252,4 +252,17 @@ input{
 .imagen{
   width: 150px;
   height: 150px;
+}
+
+.eliminarMateria{
+background: rgba(26, 20, 20, 0.719);
+  height: 50px;
+  width: 100px;
+  margin-right: 100px;
+  font-size: 18px;
+  color: beige;
+  float: right;
+}
+.eliminarMateria:hover{
+background:rgb(190, 185, 185);
 }
