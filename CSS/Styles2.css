@@ -279,18 +279,27 @@ input select, submit, textarea{
     justify-content: space-between;
 }
 .titulo{
+    padding: 2rem;
     text-transform: uppercase;
     font-weight: 300; 
 }
+.titulo2{
+    padding: 2rem;
+    text-transform: uppercase;
+    font-weight: 300; 
+    font-size: 2.3rem;
+    line-height: 1.8;
+}
 
 /*Acomoda los espacios*/
-.respuesta{
-    padding: .5rem 3rem .5rem 1rem;
-}
+
 #tituloFAQ{
     text-align: center;
     text-transform: uppercase;
     font-weight: 400;
+}
+.respuesta{
+    padding: .5rem 4rem .5rem 4rem;
 }
 
 /*Estilos de footer*/
@@ -315,4 +324,14 @@ input select, submit, textarea{
 .copyright{
     margin: 0;
     color: #FFFFFF;
+}
+.btnEnviar{
+    font-size:2rem;
+    font-family:'Arsenal', sans-serif;
+    color:white;
+    background:#fa4252;
+    border:0px;
+    width: 40%;
+    height: 4.5rem;
+
 }
