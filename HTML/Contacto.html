@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Contactanos</title>
-        <link rel="stylesheet" href="../CSS/styles.css">
+        <link rel="stylesheet" href="../CSS/styles2.css">
     </head>
     <body>
 
@@ -24,12 +24,12 @@
                 </div>
             </div>
         </header>
-        
-        
+
+
         <h2 class="centrar-texto fw300">Contacto</h2>
         <main class=" contenedor2  margenes"> 
             <form action="../PHP/Enviar.php" method="POST" name="contacto" id="contacto">
-                <fieldset>
+                <fieldset class="respuesta">
                     <legend>INFORMACION PERSONAL NECESARIA</legend>
                     <label for="nombre">Nombre</label>
                     <input name="nombre" type="text" id="nombre" placeholder="Ingresa tu nombre" required>
@@ -43,11 +43,13 @@
                     <label for="mensaje">Mensaje</label>
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingresa lo que quieras"></textarea>
                 </fieldset>
-                <input type="submit" value="Enviar" class="btnRegistrarse" onclick='alert("MENSAJE ENVIADO.")' >
+                <div align="center" style="padding: 10px">
+                    <input type="submit" value="Enviar" class="btnEnviar" onclick='alert("MENSAJE ENVIADO.")'  >
+                </div>
             </form>
 
-       
-       
+
+
         </main>
         <footer class="footer-sitio seccion">
             <div class="contenedor2 contenedor-footer">
