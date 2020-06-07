@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>BLOG</title>
+        <!--script src="../JS/Blogbrain.js" type="text/javascript"></script-->
+        <link rel="stylesheet" href="../CSS/Styles2.css">
+    </head>
+    <body>
+
+        <!--  
+<input type="button" value="Imprimir en pantalla" id="imprime">
+-->
+
+        <header>
+            <div class="contenedor">
+                <div class="header-fondo">
+                    <div class="imagenes-header">
+                        <a href="login.html">
+                            <img src="../imagenes/Untitled-1.png" alt="" class="vizagi" >
+                            <!--<img src="../imagenes/logoP1.png" alt="" class="vizagi" >-->
+                        </a>
+                    </div>
+                    <nav class="navegacion">
+                        <a href="login.html">Volver Inicio</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="seecion contenedor2">
+            <h2 class="fw300 centrar-texto">Blog</h2>
+            <div class="contenedor-de-citas">
+
+                <!---->
+                <div class="cita">
+                    <div class="contenido-cita">
+                        <a href="EntradaCompleta.html" style="text-decoration: none; color: black;">
+                            <h3 class="title2">Felipe de Jesus Tlaxcala Moya</h3>
+                        </a>
+                        <br>
+                        <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae obcaecati saepe iste nemo labore, quis illo enim nesciunt ipsam velit delectus libero minus culpa, aliquam aperiam. Ea repudiandae labore ratione officia, dignissimos cum tenetur aliquid nulla maiores omnis, cupiditate corporis beatae. Magnam, veniam nihil autem numquam. Enim facere adipisci laboriosam....</p>
+                        </div>
+                    </div>
+                </div> 
+                <!---->
+                <script>
+                    var x = 10;
+                    for(var i = 0; i < 10;i++){
+                        //Algunos campos se remplazaa con informacion de la base de datos
+                        document.write("<div class='cita'>");
+                        document.write("<div class='contenido-cita'>");
+                        document.write("<a href='EntradaCompleta.html' style='text-decoration: none; color: black;'>");
+                        document.write("<h3 class='title2'>Felipe de Jesus Tlaxcala Moya</h3>");
+                        document.write("</a>");
+                        document.write("<br>");
+                        document.write("<div>");
+                        document.write("<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae obcaecati saepe iste nemo labore, quis illo enim nesciunt ipsam velit delectus libero minus culpa, aliquam aperiam. Ea repudiandae labore ratione officia, dignissimos cum tenetur aliquid nulla maiores omnis, cupiditate corporis beatae. Magnam, veniam nihil autem numquam. Enim facere adipisci laboriosam....</p>");
+                        document.write("</div>");
+                        document.write("</div>");
+                        document.write("</div>");
+
+                    }
+                </script>
+
+            </div>
+        </main>
+        <footer class="footer-sitio seccion">
+            <div class="contenedor2 contenedor-footer">
+                <nav class="Navegacion">
+                    <a href="login.html">Volver Inicio</a>
+                    <a href="FAQ.html">FAQ</a>
+                    <a href="Contacto.html">Contacto</a>
+                </nav>
+                <p class="copyright">Todos los derechos reservados 2020 &copy;</p>
+            </div>
+        </footer>
+    </body>
+</html>
