@@ -1,0 +1,48 @@
+h1{
+ font-size: 40px;
+ margin-top: 30px;
+ margin-left: 50px;
+}
+
+.buton{
+  float: right;
+  margin-right: 30px;
+  background-color: black;
+  color: aliceblue;
+  width: 130px;
+  height: 50px;
+
+}
+
+.buton:hover{
+  background-color: rgb(83, 81, 81);
+}
+
+#listaExamenes{
+  margin-top: 90px;
+ margin-left: 200px;
+ background-color: rgb(216, 212, 208);
+ width: 600px;
+}
+
+#listaExamenes ul{
+  list-style-type: none;
+  display: block;
+}
+#listaExamenes li{
+  direction: initial;
+   padding: 10px 10px;
+  border-bottom: 1px solid rgba(100, 100, 100, .3);
+}
+#listaExamenes img{
+  margin-left: 8px;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+#listaExamenes a{
+  text-decoration: none;
+  font-size: 25px;
+  color: rgb(61, 59, 59);
+}
