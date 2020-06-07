@@ -46,3 +46,47 @@ h1{
   font-size: 25px;
   color: rgb(61, 59, 59);
 }
+#seleccionaForma{
+  background-color: rgb(243, 248, 253);
+  width: 400px;
+  display: flex;
+  flex-direction: initial;
+  border-radius: 20px;
+  display: none;
+}
+
+
+#seleccionaCategoria{
+  background-color: rgb(130, 136, 143);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  display: none;
+}
+
+#seleccionaCategoria ul{
+  list-style-type: none;
+  display: block;
+}
+#seleccionaCategoria li{
+  direction: initial;
+   padding: 10px 10px;
+  border-bottom: 1px solid rgba(100, 100, 100, .3);
+}
+
+#seleccionaCategoria h4{
+  text-align: center;
+  font-size: 15px;
+  color: azure;
+}
+#nPreguntas{
+  background-color: rgb(130, 136, 143);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+#nPreguntas input{
+  float: right;
+}
