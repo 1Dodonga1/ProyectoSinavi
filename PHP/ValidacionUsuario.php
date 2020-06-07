@@ -17,8 +17,8 @@
     header("Location: ../HTML/materias.html");
     //echo  $_SESSION['nombre'];
   }else{
-    header("Location: ../HTML/login.html");
-
+//header("Location: ../HTML/login.html");
+   echo $result;
   }
 
 ?>
