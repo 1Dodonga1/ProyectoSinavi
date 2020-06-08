@@ -3,9 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Sivav|Examenes</title>
+  <link rel="stylesheet" href="../CSS/StyleInicio.css?3da2">
+  <link rel="stylesheet" href="../CSS/Examen.css?sd5s">
 </head>
 <body>
-  <h1>hola es en Examen</h1>
+  <!--Barra que se carga desde la clase Staic.js-->
+  <nav class="navegacion" id="barra"></nav>
+  <!--barra perfil que se carga desde la clase Staic.js-->
+  <nav id="perfil"></nav>
+  <h1>Examenes</h1>
+  <button  class="buton" id="agregarExamaen">Agregar examen</button>
+  <div id="listaExamenes">
+    <ul id="examenes">
+       <li><img src="../imagenes/examen.png"><a href="#">uno</a></li>
+      <li><img src="../imagenes/examen.png"><a href="#">dos</a></li>
+      <li><img src="../imagenes/examen.png"><a href="#">tres</a></li>
+      </li>
+    </ul>
+  </div>
+    <!--formulario para agregar un Examen-->
+    <div  id="agrega" class="Agregando-Examen">
+      <form class="contenido-Agregando-Materia" action="">
+        <div class="cerrar">+</div>
+        <h2>Agrega Examen</h2>
+        <img class="imagen" src="../imagenes/libros.png" alt="">
+        <input name="NomExamen"   type="text" placeholder="Nombre Examen">
+        <input name="Contraseña"  type="text" placeholder="Contraseña">
+        <input type="button" class="agregaMateria" value="registrar">
+      </form>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="../JS/Static.js?6gs"></script>
 </body>
 </html>
