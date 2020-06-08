@@ -245,8 +245,8 @@ background:rgb(190, 185, 185);
 }
 
 .cerrar{
-    position: absolute;
-    top: -4rem;
+   position: absolute;
+    top: .5rem;
     right: 1.4rem;
     font-size: 4.2rem;
     transform: rotate(45deg);
@@ -257,6 +257,8 @@ input{
     width: 50%;
     display: block;
     margin: 1.5rem auto;
+    height: 29px;
+    border-radius:10px;
 
 }
 

@@ -86,7 +86,23 @@ h1{
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  display: none;
 }
 #nPreguntas input{
   float: right;
 }
+#listaExamenes a{
+  font-size: 19px;
+}
+
+#listaExamenes  h4{
+  float: right;
+  color:rgb(100, 97, 97);
+   font-size: 18px;
+}
+
+.Eliminar{
+ padding: 5px 5px;
+ float: right;
+}
+
