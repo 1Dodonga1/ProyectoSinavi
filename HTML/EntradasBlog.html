@@ -27,44 +27,54 @@
                 </div>
             </div>
         </header>
-        <main class="seecion contenedor2">
-            <h2 class="fw300 centrar-texto">Blog</h2>
-            <div class="contenedor-de-citas">
 
-                <!---->
-                <div class="cita">
-                    <div class="contenido-cita">
-                        <a href="EntradaCompleta.html" style="text-decoration: none; color: black;">
-                            <h3 class="title2">Felipe de Jesus Tlaxcala Moya</h3>
-                        </a>
-                        <br>
-                        <div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae obcaecati saepe iste nemo labore, quis illo enim nesciunt ipsam velit delectus libero minus culpa, aliquam aperiam. Ea repudiandae labore ratione officia, dignissimos cum tenetur aliquid nulla maiores omnis, cupiditate corporis beatae. Magnam, veniam nihil autem numquam. Enim facere adipisci laboriosam....</p>
+        <!---->
+        <section class="blog ">
+            <h3 class="centrar-texto fw300 seccion">Nuestro Blog</h3>
+            <article class="Entrada-blog contenedor-de-citas-completas">
+                <div class="texto-entrada padding cita fw300 espacio-contenido-central">
+                    <div>
+                        <div class="imagen">
+                            <img src="../imagenes/usuario.ico" alt="entrada de blog">
                         </div>
                     </div>
-                </div> 
-                <!---->
-                <script>
-                    var x = 10;
-                    for(var i = 0; i < 10;i++){
-                        //Algunos campos se remplazaa con informacion de la base de datos
-                        document.write("<div class='cita'>");
-                        document.write("<div class='contenido-cita'>");
-                        document.write("<a href='EntradaCompleta.html' style='text-decoration: none; color: black;'>");
-                        document.write("<h3 class='title2'>Felipe de Jesus Tlaxcala Moya</h3>");
-                        document.write("</a>");
-                        document.write("<br>");
-                        document.write("<div>");
-                        document.write("<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae obcaecati saepe iste nemo labore, quis illo enim nesciunt ipsam velit delectus libero minus culpa, aliquam aperiam. Ea repudiandae labore ratione officia, dignissimos cum tenetur aliquid nulla maiores omnis, cupiditate corporis beatae. Magnam, veniam nihil autem numquam. Enim facere adipisci laboriosam....</p>");
-                        document.write("</div>");
-                        document.write("</div>");
-                        document.write("</div>");
+                    <div>
+                        <a href="EntradaCompleta.html" style="min-width: 20rem; text-decoration: none; color: black">
+                            <h4 class="padding">Titulo de tu entrada</h4>
+                        </a>
+                        <p class="padding">Escrito el <span>08/06/2020</span> por: <span>Felipe</span></p>
+                        <p class="padding">Consejos para construir una terrasa en el techo de tu casa con los mejores materiales y ahorrando dinero.</p>
+                    </div>
+                </div>
+            </article>
 
-                    }
-                </script>
+            <!---->
+            <script>
+                var x = 10;
+                for(var i = 0; i < 3;i++){
+                    //Algunos campos se remplazaa con informacion de la base de datos
+                    document.write("<article class='Entrada-blog contenedor-de-citas-completas'>");
+                    document.write("<div class='texto-entrada padding cita fw300 espacio-contenido-central'>");
+                    document.write("<div>");
+                    document.write("<div class='imagen'>");
+                    document.write("<img src='../imagenes/usuario.ico' alt='entrada de blog'>");
+                    document.write("</div>");
+                    document.write("</div>");
+                    document.write("<div>");
+                    document.write("<a href='EntradaCompleta.html' style='min-width: 20rem; text-decoration: none; color: black'>");
+                    document.write("<h4 class='padding'>Titulo de tu entrada</h4>");
+                    document.write("</a>");
+                    document.write("<p class='padding'>Escrito el <span>08/06/2020</span> por: <span>Felipe</span></p>");
+                    document.write("<p class='padding'>Consejos para construir una terrasa en el techo de tu casa con los mejores materiales y ahorrando dinero.</p>");
+                    document.write("</div>");
+                    document.write("</div>");
+                    document.write("</article>");
+                    
 
-            </div>
-        </main>
+                }
+            </script>
+
+        </section>
         <footer class="footer-sitio seccion">
             <div class="contenedor2 contenedor-footer">
                 <nav class="Navegacion">
