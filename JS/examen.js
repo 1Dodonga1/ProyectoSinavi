@@ -10,7 +10,7 @@ $(document).ready(function(){
         let cargando = '';
         categ.forEach(examenes => {
           cargando += `
-         <li><img src="../imagenes/examen.png"><a href="#" class="seleccionaExamen" id="${examenes.id}">${examenes.nombre}</a></li>`;
+         <li><img src="../imagenes/examen.png"><a href="#" class="seleccionaExamen" name="${examenes.nombre}" id="${examenes.id}">${examenes.nombre}</a></li>`;
         });
         $('#examenes').html(cargando);
       }
@@ -40,14 +40,16 @@ $(document).ready(function(){
 
   //seleccionando un examen
   $(document).on('click', '.seleccionaExamen', function(){
-    id=this.id;
+    var id=this.id;
+    var n = event.target;
+    var nombre = n.name;//nombre examen
     $.ajax({
       url: '../PHP/examen-Datos.php',
-      data: {id},
+      data: {id, nombre},
       type: 'POST',
       success: function (response) {
-        console.log(response);
-        location.href = "../HTML/Examen_confi.html";
+        console.log(nombre);
+       location.href = "../HTML/Examen_confi.php";
       }
     });
   });

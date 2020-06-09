@@ -1,6 +1,6 @@
 <?php
    session_start();
    $_SESSION['idExamen']=$_POST['id'];
-
-   echo $_SESSION['idExamen'];
+   $_SESSION['nomExamen']=$_POST['nombre'];
+   echo $_SESSION['nomExamen'];
 ?>

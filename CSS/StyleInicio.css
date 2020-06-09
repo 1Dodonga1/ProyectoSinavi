@@ -253,13 +253,15 @@ background:rgb(190, 185, 185);
 }
 
 input{
-    width: 50%;
-    display: block;
-    margin: 1.5rem auto;
+    /*width: 50%;
     height: 29px;
+    
+    margin: 1.5rem auto;*/
+    display: block;
     border-radius:10px;
 
 }
+
 
 .imagen{
   width: 150px;
