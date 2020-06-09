@@ -59,6 +59,7 @@ h1{
     align-items: center;
     display: none;
 }
+
 .cerrar{
     position: absolute;
     top: 15rem;
@@ -118,7 +119,6 @@ h1{
   border-radius: 10px;
   display: flex;
   flex-wrap: wrap;
-  display: none;
 }
 
 #nPreguntas input{
@@ -172,7 +172,7 @@ h1{
    padding: 10px 10px;
    display: flex;
   flex-direction: column;
-  display: none;
+  
 }
 
 #Categoria-preguntas h4{

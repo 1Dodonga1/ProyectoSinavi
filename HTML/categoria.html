@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/StyleInicio.css?63s5">
+    <link rel="stylesheet" href="../CSS/StyleInicio.css?655s5">
     <link rel="stylesheet" href="../CSS/barraLatetalCategoria.css?fdsfaa">
   <title>Document</title>
 </head>
@@ -51,8 +51,8 @@
       <div class="cerrar">+</div>
       <h2>Agrega categoria</h2>
       <img class="imagen" src="../imagenes/libros.png" alt="">
-      <input name="NomCategoria" id="NomMateria" type="text" placeholder="Nombre Categoria">
-      <input type="submit" class="agregaMateria" value="registrar">
+      <input class="inp" name="NomCategoria" id="NomMateria" type="text" placeholder="Nombre Categoria">
+      <input class="inp" type="submit" class="agregaMateria" value="registrar">
     </form>
   </div>
    
@@ -62,14 +62,14 @@
       <div class="cerrar">+</div>
       <h2>Agrega Pregunta</h2>
       <img class="imagen" src="../imagenes/pregunta.png" alt="">
-      <input name="Descripcion" id="NomMateria" type="text" placeholder="Escreibe una pregunta">
-      <select name="Tipo">
+      <input class="inp" name="Descripcion" id="NomMateria" type="text" placeholder="Escreibe una pregunta">
+      <select class="inp" name="Tipo">
         <option value="" disabled selected>--- Tipo de Pregunta ---</option>
         <option value="1">Opcion multiple</option>
         <option value="2">Verdadero, Falso</option>
         <option value="3">Numerica</option>
       </select>
-      <input type="button" class="agregaPreg" value="registrar">
+      <input  class="inp" type="button" class="agregaPreg" value="registrar">
     </form>
   </div>
   <!--formulario para agregar respuestas-->
@@ -78,9 +78,9 @@
       <div class="cerrar">+</div>
       <h2>Agrega Respuesta</h2>
       <img class="imagen" src="../imagenes/respuestas.png" alt="">
-      <input name="Descripcion"  id="Descripcion" type="text" placeholder="Escreibe una respuesta">
+      <input class="inp" name="Descripcion"  id="Descripcion" type="text" placeholder="Escreibe una respuesta">
       <div class="tipoPregunta">
-      <input name="Calificacion" id="Calificacion" type="text" placeholder="Calificacion">
+      <input  class="inp" name="Calificacion" id="Calificacion" type="text" placeholder="Calificacion">
       <h4>En caso que  tu respuesta es(f/v) sera equivalente a</h4>
       <h4>Falso=0 si es verdadero=1</h4>
       <h4>Si es numerica solo ingresar el numero</h4>

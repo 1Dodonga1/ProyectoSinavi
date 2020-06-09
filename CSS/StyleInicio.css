@@ -261,7 +261,11 @@ input{
     border-radius:10px;
 
 }
-
+.inp{
+    width: 50%;
+    height: 29px;
+    margin: 1.5rem auto;
+}
 
 .imagen{
   width: 150px;

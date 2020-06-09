@@ -54,29 +54,104 @@ $(document).ready(function (){
   $(document).on('click', '.selec', function () {
     aleatorioSelec = this.id;
     document.querySelector('#selecForma').style.display = "none";
+    categorias();
     document.querySelector('#selecCatego').style.display = "flex";
-    cargando = '<button class="ok" id="'+aleatorioSelec+'">ok</button><button class="cerrar" >Cancelar</button>';
+    cargando = '<button class="ok" id="'+aleatorioSelec+'">ok</button>';
     $('.agregaBoton').html(cargando);
-
   });
   $(document).on('click', '.cerrar', function () {
     document.querySelector('#selecCatego').style.display = "none";
   });
   
+  //boton agregar pregunta
   $(document).on('click', '.ok', function () {
-    console.log("ho");
-    aleatorioSelec = this.id;
+    var aleatorioSelec = this.id;
+    var Idcategora= $('input[name="radio"]:checked').val();
+  
     if (aleatorioSelec==1){
+      
+      document.querySelector('#selecCatego').style.display = "none"; 
       document.querySelector('#NumPreguntas').style.display = "flex"; 
-    }else{
-      document.querySelector('#IndvPregunta').style.display = "flex"; 
+      $.ajax({
+        url: '../PHP/numeroPreguntas.php',
+        data: {Idcategora},
+        type: 'POST',
+        success: function (response) {
+          let c=`<h5>/` + response +`</h5>`;
+          console.log(c);
+          $('.NuPreguntas').html(c);
+        }
+      });
+    
+    }else if(aleatorioSelec==2){
+      document.querySelector('#selecCatego').style.display = "none";
+      document.querySelector('#IndvPregunta').style.display = "flex";
+      ///metodo de ajax para cargar las preguntas dependiendo la categoria
+      $.ajax({
+        url: '../PHP/preguntasCategoria.php',
+        data: { Idcategora },
+        type: 'POST',
+        success: function (response) {
+          
+          let categ = JSON.parse(response);
+          let c = '';
+          categ.forEach(categoria => {
+            c += `
+            <li><input type="radio" id="${categoria.IdPreguntas}" name="preguntas" 
+            value="${categoria.IdPreguntas}">${categoria.Descripcion}</li>`;
+          });
+          $('#preguntitas').html(c);
+        }
+      });
     }
-
   });
+
+   //poder cerrar las ventanas
   $(document).on('click', '.cerrar', function () {
     document.querySelector('#NumPreguntas').style.display = "none";
   });
+  $(document).on('click', '.cerrar', function () {
+    document.querySelector('#IndvPregunta').style.display = "none";
+  });
+  $(document).on('click', '.cancela', function () {
+    document.querySelector('#NumPreguntas').style.display = "none";
+  });
+  //agregar las categorias
+   function categorias(){
+       $.ajax({
+         url: '../PHP/Categorias.php',
+         type: 'GET',
+         success: function (response) {
+           let categ = JSON.parse(response);
+           let cargando = '';
+           categ.forEach(categoria => {
+             cargando += `
+         <li><input type="radio" id="${categoria.id}" name="radio" 
+         value="${categoria.id}"> ${categoria.nombre} </li>`;
+           });
+           $('.MuestraCategoria').html(cargando);
+         }
+       });
+   }
 
 
+   //metodo para agregar preguntas a el examen
+  $(document).on('click', '#AgregaPreguntaAlExamen', function () {
+    var pregunta = $('input[name="preguntas"]:checked').val();
+    $.ajax({
+      url: '../PHP/AgregarPreguntasAlExamen.php',
+      data: { pregunta },
+      type: 'POST',
+      success: function (response) {
+          console.log(response);
+          document.querySelector('#IndvPregunta').style.display = "none";
+          inicio();
+      }
+    });
+  });
+
+  $(document).on('click', '#AgregaP', function () {
+    location.href = "../HTML/categoria.html";
+  });
 });
 
