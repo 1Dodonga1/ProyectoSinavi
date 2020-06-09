@@ -1,5 +1,5 @@
 let imagenes = ['../imagenes/img1.png','../imagenes/img2.png','../imagenes/img3.jpg'];
-let texto = [' Sinavi la mejor opcion para ti amigo maestro... Pruebalo ya!','Si ves esto es que la imagen no cargo :,C','Organiza tus materias, crea tus examnes, Agregale preguntas tu propio banco de preguntas!']
+let texto = [' Sinavi la mejor opcion para ti amigo maestro... Pruebalo ya!','','Organiza tus materias, crea tus examnes, Agregale preguntas tu propio banco de preguntas!']
 let contador = 0;
 
 function carrousel(direccion){
