@@ -2,7 +2,7 @@
 include ('../PHP/conexion.php');
 session_start(); 
 $idUsua= $_SESSION['idUsuario'];
-$query ="select Calificacion, Nombre from calificacion inner join examen on  examen.IdExamen=calificacion.Examen_IdExamen where ListaAsistencia_IdLista='$idUsua';";
+$query ="select Calificacion, Nombre from calificacion inner join examen on  examen.IdExamen=calificacion.Examen_IdExamen where ListaAsistencia_IdLista='18';";
 
 $result = mysqli_query($connection,$query);
 if(!$result) {

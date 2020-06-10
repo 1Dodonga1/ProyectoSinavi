@@ -43,7 +43,7 @@ $(document).ready(function () {
   });
 
 
-  $(document).on('click', '.agregaMateria', function () {
+  $(document).on('click', '#agregaMateria', function () {
     var NomMateria = $("#NomMateria").val();
     var Codigo = $("#Codigo").val();
     console.log(NomMateria);

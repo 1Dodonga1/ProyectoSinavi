@@ -23,7 +23,7 @@ function BarraPerfil(){
     `  
     <ul>
       <li><img src="../imagenes/usuario.png" ></ima> </li>
-      <li><?php echo $_SESSION['nombre'] ?> </li>
+      <li>Manuel Cabrales</li>
       <br>
       <li><button onclick="location.href='../PHP/cerrarSession.php'" >Cerrar</button></li>
     </ul> `;

@@ -245,8 +245,8 @@ background:rgb(190, 185, 185);
 
 .cerrar{
    position: absolute;
-    top: .5rem;
-    right: 1.4rem;
+    top: 0rem;
+    right: 0rem;
     font-size: 4.2rem;
     transform: rotate(45deg);
     cursor: pointer;

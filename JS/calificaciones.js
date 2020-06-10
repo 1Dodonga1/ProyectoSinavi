@@ -27,11 +27,12 @@ $(document).ready(function () {
    //para mostrar cuantas las calificaciones
   $(document).on('click', '.MuestrameCali', function () {
     let id = this.id;
+    console.log(id);
     $.ajax({
       url: '../PHP/CalicacionExamen.php',
       type: 'GET',
       success: function (response) {
-        
+        console.log(response);
         let categ = JSON.parse(response);
         let cargando = "<h1>" + id +"</h1>";
         categ.forEach(Calificacion => {
